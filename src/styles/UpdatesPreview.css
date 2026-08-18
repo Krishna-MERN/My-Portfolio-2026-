@@ -1,0 +1,424 @@
+/* =========================================================
+   UPDATES PREVIEW
+========================================================= */
+
+.updates-preview {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #f8fafc;
+}
+
+.updates-preview-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.updates-preview-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.65fr;
+
+  align-items: end;
+
+  gap: 60px;
+
+  margin-bottom: 45px;
+}
+
+.updates-preview-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #2563eb;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.updates-preview-header h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(38px, 5vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.updates-preview-header h2 span {
+  color: #2563eb;
+}
+
+.updates-preview-header p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   UPDATE LIST
+========================================================= */
+
+.updates-preview-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   UPDATE CARD
+========================================================= */
+
+.updates-preview-card {
+  display: grid;
+
+  grid-template-columns: 155px 1fr;
+
+  gap: 30px;
+
+  padding: 25px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.updates-preview-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.updates-preview-date {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  padding-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+}
+
+.updates-preview-date svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.updates-preview-content {
+  min-width: 0;
+}
+
+.updates-preview-meta {
+  margin-bottom: 9px;
+}
+
+.updates-preview-category {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 5px 8px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.updates-preview-content h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.2px;
+
+  font-weight: 800;
+}
+
+.updates-preview-content p {
+  max-width: 700px;
+
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.75;
+
+  font-weight: 500;
+
+  display: -webkit-box;
+
+  overflow: hidden;
+
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.updates-preview-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 14px;
+}
+
+.updates-preview-tags span {
+  padding: 5px 8px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 5px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.updates-preview-cta {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.updates-preview-cta a {
+  min-height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border: 1px solid #dbe1e8;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.updates-preview-cta a:hover {
+  transform: translateY(-2px);
+
+  border-color: #bfdbfe;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .updates-preview-header {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .updates-preview-header p {
+    max-width: 600px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .updates-preview {
+    padding: 70px 0;
+  }
+
+  .updates-preview-container {
+    width: calc(100% - 28px);
+  }
+
+  .updates-preview-header {
+    margin-bottom: 32px;
+  }
+
+  .updates-preview-header h2 {
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .updates-preview-header p {
+    font-size: 12px;
+  }
+
+  .updates-preview-card {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 20px;
+  }
+
+  .updates-preview-date {
+    padding: 0;
+  }
+
+  .updates-preview-content h3 {
+    font-size: 16px;
+  }
+
+  .updates-preview-content p {
+    font-size: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .updates-preview-header h2 {
+    font-size: 34px;
+  }
+
+  .updates-preview-card {
+    padding: 17px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .updates-preview-card,
+  .updates-preview-cta a {
+    transition: none;
+  }
+
+}

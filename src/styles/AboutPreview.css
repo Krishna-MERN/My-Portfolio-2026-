@@ -1,0 +1,567 @@
+/* =========================================================
+   ABOUT PREVIEW
+========================================================= */
+
+.about-preview {
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: #ffffff;
+}
+
+.about-preview-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* =========================================================
+   VISUAL CARD
+========================================================= */
+
+.about-preview-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.about-preview-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 390px;
+
+  min-height: 390px;
+
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(37, 99, 235, 0.10),
+      transparent 35%
+    ),
+    #f8fafc;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.06);
+}
+
+
+/* Decorative circle */
+
+.about-preview-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -70px;
+  bottom: -70px;
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+
+  border-radius: 50%;
+}
+
+.about-preview-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  right: -110px;
+  bottom: -110px;
+
+  border: 1px dashed rgba(37, 99, 235, 0.08);
+
+  border-radius: 50%;
+}
+
+
+/* Top */
+
+.about-card-top {
+  position: absolute;
+
+  top: 25px;
+  left: 30px;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-card-label {
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.about-card-number {
+  color: #cbd5e1;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* Line */
+
+.about-card-line {
+  width: 45px;
+  height: 3px;
+
+  margin-bottom: 25px;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+}
+
+
+/* Icon */
+
+.about-card-icon {
+  width: 62px;
+  height: 62px;
+
+  margin-bottom: 22px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* Card heading */
+
+.about-preview-card h3 {
+  max-width: 300px;
+
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 27px;
+  line-height: 1.25;
+
+  letter-spacing: -0.8px;
+
+  font-weight: 800;
+}
+
+.about-preview-card h3 span {
+  color: #2563eb;
+}
+
+
+/* Card text */
+
+.about-preview-card p {
+  max-width: 300px;
+
+  margin: 15px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-preview-content {
+  max-width: 650px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.about-preview-title {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(35px, 4vw, 52px);
+
+  line-height: 1.12;
+
+  letter-spacing: -1.8px;
+
+  font-weight: 800;
+}
+
+.about-preview-title span {
+  color: #2563eb;
+}
+
+
+/* Description */
+
+.about-preview-text {
+  max-width: 620px;
+
+  margin: 22px 0 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.about-highlights {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.about-highlight {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-highlight:hover {
+  border-color: #bfdbfe;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.about-highlight > svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+}
+
+.about-highlight div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.about-highlight strong {
+  color: #1e293b;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.about-highlight span {
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-preview-button {
+  width: fit-content;
+
+  min-height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 30px;
+
+  padding: 0 17px;
+
+  border: 1px solid #2563eb;
+  border-radius: 9px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-preview-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 22px rgba(37, 99, 235, 0.20);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .about-preview {
+    padding: 90px 0;
+  }
+
+  .about-preview-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .about-preview-card {
+    min-height: 350px;
+
+    padding: 28px;
+  }
+
+  .about-preview-card h3 {
+    font-size: 24px;
+  }
+
+  .about-preview-title {
+    font-size: clamp(32px, 4vw, 43px);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+  .about-preview {
+    padding: 75px 0;
+  }
+
+  .about-preview-container {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-preview-visual {
+    order: 2;
+  }
+
+  .about-preview-content {
+    order: 1;
+
+    max-width: 700px;
+
+    text-align: center;
+  }
+
+  .about-preview-card {
+    max-width: 500px;
+
+    min-height: 330px;
+
+    text-align: left;
+  }
+
+  .section-eyebrow {
+    margin-bottom: 13px;
+  }
+
+  .about-preview-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: clamp(32px, 8vw, 43px);
+  }
+
+  .about-preview-text {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 14px;
+  }
+
+  .about-highlights {
+    text-align: left;
+  }
+
+  .about-preview-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .about-preview-card {
+    min-height: 310px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+  }
+
+  .about-card-top {
+    left: 24px;
+    right: 24px;
+  }
+
+  .about-card-icon {
+    width: 55px;
+    height: 55px;
+
+    margin-bottom: 18px;
+  }
+
+  .about-preview-card h3 {
+    font-size: 22px;
+  }
+
+  .about-preview-card p {
+    font-size: 12px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlight {
+    min-height: 65px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .about-preview {
+    padding: 60px 0;
+  }
+
+  .about-preview-card {
+    min-height: 290px;
+
+    padding: 22px;
+  }
+
+  .about-preview-card h3 {
+    font-size: 20px;
+  }
+
+  .about-preview-text {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-highlight,
+  .about-preview-button {
+    transition: none;
+  }
+}

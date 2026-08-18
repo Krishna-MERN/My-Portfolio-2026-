@@ -1,0 +1,657 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+  width: 100%;
+
+  background: #0f172a;
+
+  color: #ffffff;
+}
+
+.footer-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.footer-main {
+  display: grid;
+
+  grid-template-columns: 1.8fr 0.8fr 0.8fr 1fr;
+
+  gap: 55px;
+
+  padding: 75px 0 60px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.footer-logo-mark {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 20px rgba(37, 99, 235, 0.25);
+}
+
+.footer-description {
+  margin: 18px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.footer-availability {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 20px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(34, 197, 94, 0.15);
+
+  border-radius: 20px;
+
+  background: rgba(34, 197, 94, 0.06);
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.footer-availability-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.footer-social {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(96, 165, 250, 0.3);
+
+  background: rgba(37, 99, 235, 0.12);
+
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column h3 {
+  margin: 3px 0 20px;
+
+  color: #f8fafc;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2px;
+}
+
+.footer-column ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+.footer-column li a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-column li a:hover {
+  transform: translateX(3px);
+
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   RESUME BUTTON
+========================================================= */
+
+.footer-resume-btn {
+  min-height: 36px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 20px;
+
+  padding: 0 12px;
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  border-radius: 7px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  color: #93c5fd;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.footer-resume-btn:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(96, 165, 250, 0.4);
+
+  background: rgba(37, 99, 235, 0.16);
+}
+
+
+/* =========================================================
+   CONTACT STRIP
+========================================================= */
+
+.footer-contact-strip {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 0.8fr auto;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-contact-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.footer-contact-icon {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #60a5fa;
+}
+
+.footer-contact-item span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.footer-contact-item a,
+.footer-contact-item strong {
+  display: block;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.footer-contact-item a:hover {
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.footer-contact-btn {
+  min-height: 38px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 14px;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.footer-contact-btn:hover {
+  transform: translateY(-2px);
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.footer-bottom {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.footer-copyright {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.footer-divider {
+  color: #334155;
+}
+
+.footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+}
+
+.footer-bottom-links > a {
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.footer-bottom-links > a:hover {
+  color: #94a3b8;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.footer-top-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-top-btn:hover {
+  transform: translateY(-2px);
+
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 550px;
+  }
+
+  .footer-contact-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-contact-btn {
+    width: fit-content;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px 30px;
+
+    padding: 60px 0 45px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-contact-strip {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .footer-contact-btn {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 22px 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .footer-container {
+    width: calc(100% - 28px);
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 55px 0 40px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-description {
+    max-width: 400px;
+
+    font-size: 10px;
+  }
+
+  .footer-contact-strip {
+    padding: 22px 0;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+
+    gap: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .footer-logo {
+    font-size: 14px;
+  }
+
+  .footer-main {
+    gap: 30px;
+  }
+
+  .footer-contact-item a,
+  .footer-contact-item strong {
+    font-size: 8px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .footer-social a,
+  .footer-column li a,
+  .footer-resume-btn,
+  .footer-contact-btn,
+  .footer-top-btn {
+    transition: none;
+  }
+
+}

@@ -1,0 +1,401 @@
+/* =========================================================
+   CALL TO ACTION
+========================================================= */
+
+.cta-section {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.cta-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CTA CARD
+========================================================= */
+
+.cta-card {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 420px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 70px 40px;
+
+  border-radius: 22px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(59, 130, 246, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(37, 99, 235, 0.14),
+      transparent 30%
+    ),
+    #0f172a;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   DECORATIVE GLOW
+========================================================= */
+
+.cta-glow {
+  position: absolute;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.cta-glow-one {
+  width: 420px;
+  height: 420px;
+
+  top: -260px;
+  right: -100px;
+}
+
+.cta-glow-two {
+  width: 300px;
+  height: 300px;
+
+  bottom: -210px;
+  left: -80px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 700px;
+
+  text-align: center;
+}
+
+.cta-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 17px;
+
+  color: #60a5fa;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.cta-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(38px, 5vw, 58px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2.2px;
+
+  font-weight: 800;
+}
+
+.cta-content h2 span {
+  color: #60a5fa;
+}
+
+.cta-content p {
+  max-width: 570px;
+
+  margin: 20px auto 0;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.cta-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.cta-btn {
+  min-height: 45px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* Primary */
+
+.cta-btn-primary {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 22px rgba(37, 99, 235, 0.25);
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-3px);
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 12px 28px rgba(37, 99, 235, 0.35);
+}
+
+
+/* Secondary */
+
+.cta-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #e2e8f0;
+}
+
+.cta-btn-secondary:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.cta-social {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.cta-social > span {
+  color: #64748b;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.cta-social > div {
+  display: flex;
+
+  gap: 6px;
+}
+
+.cta-social a {
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #94a3b8;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cta-social a:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(96, 165, 250, 0.35);
+
+  background: rgba(37, 99, 235, 0.15);
+
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .cta-section {
+    padding: 70px 0;
+  }
+
+  .cta-card {
+    min-height: auto;
+
+    padding: 65px 25px;
+
+    border-radius: 18px;
+  }
+
+  .cta-content h2 {
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .cta-content p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .cta-container {
+    width: calc(100% - 28px);
+  }
+
+  .cta-card {
+    padding: 55px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 34px;
+  }
+
+  .cta-content p {
+    font-size: 11px;
+
+    line-height: 1.7;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .cta-content h2 {
+    font-size: 31px;
+  }
+
+  .cta-card {
+    padding: 48px 16px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cta-btn,
+  .cta-social a {
+    transition: none;
+  }
+
+}

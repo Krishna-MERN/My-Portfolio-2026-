@@ -1,0 +1,648 @@
+/* =========================================================
+   UPDATES PAGE
+========================================================= */
+
+.updates-page {
+  width: 100%;
+
+  background: #ffffff;
+
+  color: #0f172a;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.updates-container {
+  width: min(100% - 40px, 1050px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.updates-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 105px 0 90px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(37, 99, 235, 0.09),
+      transparent 30%
+    ),
+    #f8fafc;
+
+  border-bottom: 1px solid #eef2f7;
+}
+
+.updates-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -120px;
+  bottom: -160px;
+
+  border: 1px solid rgba(37, 99, 235, 0.08);
+
+  border-radius: 50%;
+}
+
+.updates-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.updates-hero h1 {
+  margin: 0;
+
+  font-size: clamp(46px, 7vw, 72px);
+
+  line-height: 1;
+
+  letter-spacing: -3px;
+
+  font-weight: 800;
+
+  color: #111827;
+}
+
+.updates-hero h1 span {
+  color: #2563eb;
+}
+
+.updates-hero p {
+  max-width: 600px;
+
+  margin: 24px 0 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.updates-content {
+  padding: 90px 0 110px;
+}
+
+
+/* =========================================================
+   CONTENT HEADER
+========================================================= */
+
+.updates-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.7fr;
+
+  gap: 60px;
+
+  align-items: end;
+
+  margin-bottom: 65px;
+}
+
+.updates-header > div > span {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.updates-header h2 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: clamp(32px, 4vw, 46px);
+
+  line-height: 1.1;
+
+  letter-spacing: -1.8px;
+
+  font-weight: 700;
+}
+
+.updates-header h2 strong {
+  color: #2563eb;
+
+  font-weight: 800;
+}
+
+.updates-header > p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.updates-timeline {
+  width: 100%;
+}
+
+.update-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   TIMELINE SIDE
+========================================================= */
+
+.update-timeline {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.update-dot {
+  position: relative;
+
+  z-index: 2;
+
+  width: 16px;
+  height: 16px;
+
+  margin-top: 28px;
+
+  display: grid;
+
+  place-items: center;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.update-dot span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+.update-line {
+  position: absolute;
+
+  top: 44px;
+  bottom: 0;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #dbeafe,
+      #e2e8f0
+    );
+}
+
+
+/* =========================================================
+   UPDATE CARD
+========================================================= */
+
+.update-card {
+  margin-bottom: 25px;
+
+  padding: 25px 27px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 22px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cbdffb;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.update-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 17px;
+}
+
+.update-date {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.update-date svg {
+  color: #2563eb;
+}
+
+.update-category {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 9px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.update-card-content h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.3px;
+
+  font-weight: 800;
+}
+
+.update-card-content p {
+  max-width: 750px;
+
+  margin: 11px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.update-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 19px;
+}
+
+.update-tags span {
+  padding: 6px 9px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 6px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.update-card-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #f1f5f9;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.update-card-footer svg {
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.updates-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 45px;
+
+  padding: 23px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 12px;
+
+  background: #f8fbff;
+}
+
+.updates-bottom-icon {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.updates-bottom h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 15px;
+
+  font-weight: 800;
+}
+
+.updates-bottom p {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .updates-header {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .updates-header > p {
+    max-width: 650px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .updates-container {
+    width: calc(100% - 28px);
+  }
+
+  .updates-hero {
+    padding: 75px 0 65px;
+  }
+
+  .updates-hero h1 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+  .updates-hero p {
+    font-size: 13px;
+  }
+
+  .updates-content {
+    padding: 65px 0 80px;
+  }
+
+  .updates-header {
+    margin-bottom: 45px;
+  }
+
+  .updates-header h2 {
+    font-size: 34px;
+  }
+
+  .update-item {
+    grid-template-columns: 24px 1fr;
+
+    gap: 10px;
+  }
+
+  .update-dot {
+    width: 13px;
+    height: 13px;
+
+    margin-top: 27px;
+  }
+
+  .update-dot span {
+    width: 5px;
+    height: 5px;
+  }
+
+  .update-line {
+    top: 40px;
+  }
+
+  .update-card {
+    padding: 20px;
+
+    margin-bottom: 18px;
+  }
+
+  .update-card-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .update-card-content h3 {
+    font-size: 17px;
+  }
+
+  .update-card-content p {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .updates-hero h1 {
+    font-size: 42px;
+  }
+
+  .updates-header h2 {
+    font-size: 31px;
+  }
+
+  .update-card {
+    padding: 17px;
+  }
+
+  .updates-bottom {
+    align-items: flex-start;
+
+    padding: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .update-card {
+    transition: none;
+  }
+}

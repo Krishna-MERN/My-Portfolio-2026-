@@ -1,0 +1,35 @@
+HOME
+│
+├── Navbar
+│
+├── Hero
+│
+├── QuickStats
+│
+├── AboutPreview
+│
+├── TechStack
+│
+├── FeaturedProjects
+│
+├── ExperiencePreview
+│
+├── CareerTimeline
+│
+├── IndustrialExperience
+│
+├── Achievements
+│
+├── CertificationsPreview
+│
+├── CodingProfiles
+│
+├── LatestUpdates
+│
+├── BlogPreview
+│
+├── GitHubActivity
+│
+├── CallToAction
+│
+└── Footer

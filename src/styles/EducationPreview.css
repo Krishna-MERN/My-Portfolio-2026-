@@ -1,0 +1,566 @@
+/* =========================================================
+   EDUCATION PREVIEW
+========================================================= */
+
+.education-preview {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #f8fafc;
+
+  border-top: 1px solid #eef2f7;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.education-preview-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.education-preview-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.75fr;
+
+  align-items: end;
+
+  gap: 60px;
+
+  margin-bottom: 55px;
+}
+
+.education-preview-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.education-preview-header h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(36px, 5vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.education-preview-header h2 span {
+  color: #2563eb;
+}
+
+.education-preview-header > p {
+  max-width: 450px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.education-timeline {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+
+/* =========================================================
+   EDUCATION ITEM
+========================================================= */
+
+.education-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   TIMELINE MARKER
+========================================================= */
+
+.education-timeline-marker {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.education-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+
+  place-items: center;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  box-shadow:
+    0 5px 15px rgba(37, 99, 235, 0.08);
+}
+
+.education-line {
+  width: 1px;
+
+  flex: 1;
+
+  min-height: 25px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #bfdbfe,
+      #e2e8f0
+    );
+}
+
+
+/* =========================================================
+   EDUCATION CARD
+========================================================= */
+
+.education-card {
+  margin-bottom: 20px;
+
+  padding: 27px 30px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 25px rgba(15, 23, 42, 0.03);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateX(4px);
+
+  border-color: #dbeafe;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.education-card-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.education-status {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  padding: 5px 8px;
+
+  border: 1px solid #dcfce7;
+
+  border-radius: 5px;
+
+  background: #f0fdf4;
+
+  color: #16a34a;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+}
+
+.education-card h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.4px;
+
+  font-weight: 800;
+}
+
+.education-card h4 {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.education-number {
+  color: #cbd5e1;
+
+  font-size: 16px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   INSTITUTION
+========================================================= */
+
+.education-institution {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #eef2f7;
+}
+
+.education-institution strong {
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.education-institution span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.education-meta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 14px;
+}
+
+.education-meta span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 900;
+}
+
+.education-meta span:last-child {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 900;
+  
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.education-preview-footer {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.education-preview-link {
+  min-height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 16px;
+
+  border: 1px solid #dbe1e8;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.education-preview-link:hover {
+  transform: translateY(-3px);
+
+  border-color: #bfdbfe;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .education-preview-header {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .education-preview-header > p {
+    max-width: 650px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .education-preview {
+    padding: 70px 0;
+  }
+
+  .education-preview-container {
+    width: calc(100% - 28px);
+  }
+
+  .education-preview-header {
+    margin-bottom: 35px;
+  }
+
+  .education-preview-header h2 {
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .education-preview-header > p {
+    font-size: 13px;
+  }
+
+  .education-item {
+    grid-template-columns: 38px 1fr;
+
+    gap: 12px;
+  }
+
+  .education-icon {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+  }
+
+  .education-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+  }
+
+  .education-card h3 {
+    font-size: 17px;
+  }
+
+  .education-card h4 {
+    font-size: 11px;
+  }
+
+  .education-number {
+    font-size: 16px;
+  }
+
+  .education-institution {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 7px;
+  }
+
+  .education-meta {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .education-preview-footer {
+    margin-top: 20px;
+  }
+
+  .education-preview-link {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .education-preview-header h2 {
+    font-size: 34px;
+  }
+
+  .education-item {
+    grid-template-columns: 32px 1fr;
+
+    gap: 9px;
+  }
+
+  .education-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .education-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .education-card {
+    padding: 17px;
+  }
+
+  .education-card-top {
+    gap: 10px;
+  }
+
+  .education-number {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .education-card,
+  .education-preview-link {
+    transition: none;
+  }
+}

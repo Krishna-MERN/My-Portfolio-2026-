@@ -1,0 +1,1018 @@
+/* =========================================================
+   EXPERIENCE PAGE
+========================================================= */
+
+.experience-page {
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.experience-container {
+  width: min(100% - 40px, 1180px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.experience-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.experience-section-heading {
+  max-width: 680px;
+
+  margin-bottom: 50px;
+}
+
+.experience-section-heading.centered {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.experience-section-heading > span {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #2563eb;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.experience-section-heading h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(36px, 5vw, 50px);
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.experience-section-heading h2 strong {
+  color: #2563eb;
+}
+
+.experience-section-heading p {
+  max-width: 580px;
+
+  margin: 15px auto 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.experience-hero {
+  padding: 110px 0 100px;
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(37, 99, 235, 0.09),
+      transparent 32%
+    ),
+    #ffffff;
+}
+
+.experience-hero .experience-container {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+.experience-hero-content {
+  max-width: 700px;
+}
+
+.experience-hero-content h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(45px, 6vw, 70px);
+
+  line-height: 1.04;
+
+  letter-spacing: -3px;
+
+  font-weight: 800;
+}
+
+.experience-hero-content h1 span {
+  color: #2563eb;
+}
+
+.experience-hero-content p {
+  max-width: 620px;
+
+  margin: 25px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HERO ACTIONS
+========================================================= */
+
+.experience-hero-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.experience-primary-btn,
+.experience-secondary-btn {
+  min-height: 44px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.experience-primary-btn {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.experience-primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: #1d4ed8;
+}
+
+.experience-secondary-btn {
+  border: 1px solid #dbe1e8;
+
+  background: #ffffff;
+
+  color: #334155;
+}
+
+.experience-secondary-btn:hover {
+  transform: translateY(-3px);
+
+  border-color: #bfdbfe;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   HERO STATS
+========================================================= */
+
+.experience-hero-stats {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.experience-stat-card {
+  min-height: 145px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 22px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.experience-stat-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bfdbfe;
+}
+
+.experience-stat-card:last-child {
+  grid-column: span 2;
+}
+
+.experience-stat-icon {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+
+  place-items: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.experience-stat-card strong {
+  color: #1e293b;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.experience-stat-card span {
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   EXPERIENCE OVERVIEW
+========================================================= */
+
+.experience-overview {
+  padding: 100px 0;
+
+  background: #f8fafc;
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD
+========================================================= */
+
+.experience-card {
+  margin-bottom: 20px;
+
+  padding: 30px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.07);
+}
+
+.experience-card-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.experience-company {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.experience-company-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.experience-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #2563eb;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.experience-company h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+.experience-company h4 {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.experience-duration {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+.experience-duration span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.experience-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 25px 0;
+
+  background: #e5e7eb;
+}
+
+
+/* =========================================================
+   EXPERIENCE BODY
+========================================================= */
+
+.experience-card-body {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+}
+
+.experience-card-body h4 {
+  margin: 0 0 12px;
+
+  color: #1e293b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.experience-description p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.9;
+
+  font-weight: 500;
+}
+
+.experience-responsibilities ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.experience-responsibilities li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+.experience-responsibilities svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.experience-technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 25px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.experience-technologies span {
+  padding: 6px 9px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 6px;
+
+  background: #f8fafc;
+
+  color: #475569;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PROFESSIONAL SKILLS
+========================================================= */
+
+.experience-skills {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.experience-skill-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+.experience-skill-card {
+  padding: 25px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.experience-skill-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bfdbfe;
+}
+
+.experience-skill-card svg {
+  margin-bottom: 18px;
+
+  color: #2563eb;
+}
+
+.experience-skill-card h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.experience-skill-card p {
+  margin: 9px 0 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CAREER TIMELINE
+========================================================= */
+
+.experience-timeline-section {
+  padding: 100px 0;
+
+  background: #f8fafc;
+}
+
+.experience-simple-timeline {
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.experience-simple-item {
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  gap: 30px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.experience-simple-item:last-child {
+  border-bottom: none;
+}
+
+.experience-simple-item > span {
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.experience-simple-item h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  font-weight: 800;
+}
+
+.experience-simple-item p {
+  margin: 7px 0 0;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.experience-cta {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.experience-cta-card {
+  padding: 65px 30px;
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(59, 130, 246, 0.18),
+      transparent 35%
+    ),
+    #0f172a;
+
+  text-align: center;
+}
+
+.experience-cta-card > span {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: #60a5fa;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.experience-cta-card h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 5vw, 48px);
+
+  line-height: 1.1;
+
+  letter-spacing: -1.8px;
+
+  font-weight: 800;
+}
+
+.experience-cta-card h2 strong {
+  color: #60a5fa;
+}
+
+.experience-cta-card p {
+  max-width: 570px;
+
+  margin: 17px auto 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+.experience-cta-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.experience-cta-actions a {
+  min-height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.experience-cta-actions a:hover {
+  transform: translateY(-3px);
+
+  background: #3b82f6;
+}
+
+.experience-cta-actions .experience-cta-secondary {
+  border: 1px solid #334155;
+
+  background: transparent;
+
+  color: #cbd5e1;
+}
+
+.experience-cta-actions .experience-cta-secondary:hover {
+  background: #1e293b;
+
+  border-color: #475569;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .experience-hero .experience-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .experience-hero-stats {
+    max-width: 600px;
+  }
+
+  .experience-card-body {
+    gap: 35px;
+  }
+
+  .experience-skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .experience-container {
+    width: calc(100% - 28px);
+  }
+
+  .experience-hero {
+    padding: 70px 0;
+  }
+
+  .experience-hero-content h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .experience-hero-content p {
+    font-size: 12px;
+  }
+
+  .experience-hero-actions {
+    flex-direction: column;
+  }
+
+  .experience-primary-btn,
+  .experience-secondary-btn {
+    width: 100%;
+  }
+
+  .experience-hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-stat-card:last-child {
+    grid-column: span 2;
+  }
+
+  .experience-overview,
+  .experience-skills,
+  .experience-timeline-section,
+  .experience-cta {
+    padding: 70px 0;
+  }
+
+  .experience-section-heading h2 {
+    font-size: 36px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+
+  .experience-card-header {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .experience-duration {
+    align-items: flex-start;
+  }
+
+  .experience-card-body {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .experience-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-simple-item {
+    grid-template-columns: 60px 1fr;
+
+    gap: 18px;
+  }
+
+  .experience-simple-item h3 {
+    font-size: 11px;
+  }
+
+  .experience-simple-item p {
+    font-size: 9px;
+  }
+
+  .experience-cta-card {
+    padding: 50px 20px;
+  }
+
+  .experience-cta-actions {
+    flex-direction: column;
+  }
+
+  .experience-cta-actions a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .experience-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .experience-hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-stat-card:last-child {
+    grid-column: auto;
+  }
+
+  .experience-company h3 {
+    font-size: 15px;
+  }
+
+  .experience-technologies span {
+    font-size: 7px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .experience-card,
+  .experience-stat-card,
+  .experience-skill-card,
+  .experience-primary-btn,
+  .experience-secondary-btn,
+  .experience-cta-actions a {
+    transition: none;
+  }
+
+}

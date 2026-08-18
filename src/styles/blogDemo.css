@@ -1,0 +1,265 @@
+/* =========================================================
+   BLOG DEMO / EXTRA CONTENT
+========================================================= */
+
+
+/* =========================================================
+   LEAD PARAGRAPH
+========================================================= */
+
+.blog-lead {
+  font-size: 16px !important;
+
+  line-height: 1.85 !important;
+
+  color: #334155 !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   INFO / TABLE OF CONTENTS BOX
+========================================================= */
+
+.blog-info-box {
+  margin: 30px 0;
+
+  padding: 22px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+}
+
+.blog-info-box strong {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #1e3a8a;
+
+  font-size: 12px;
+}
+
+.blog-info-box ul {
+  margin: 0 !important;
+
+  padding-left: 20px !important;
+}
+
+.blog-info-box li {
+  margin-bottom: 5px;
+}
+
+.blog-info-box a {
+  color: #2563eb;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.blog-demo-image {
+  margin: 30px 0;
+}
+
+.blog-demo-image img {
+  width: 100%;
+
+  max-height: 430px;
+
+  object-fit: cover;
+
+  margin: 0 !important;
+
+  border-radius: 11px;
+}
+
+.blog-demo-image figcaption {
+  margin-top: 8px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.blog-table-wrapper {
+  width: 100%;
+
+  margin: 25px 0;
+
+  overflow-x: auto;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+}
+
+.blog-table-wrapper table {
+  width: 100%;
+
+  min-width: 520px;
+
+  border-collapse: collapse;
+
+  font-size: 10px;
+}
+
+.blog-table-wrapper th {
+  padding: 12px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  background: #f8fafc;
+
+  color: #334155;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  text-align: left;
+}
+
+.blog-table-wrapper td {
+  padding: 11px 12px;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+.blog-table-wrapper tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   HIGHLIGHT BOX
+========================================================= */
+
+.blog-highlight-box {
+  margin: 30px 0;
+
+  padding: 20px;
+
+  border-left: 3px solid #2563eb;
+
+  border-radius: 0 9px 9px 0;
+
+  background: #eff6ff;
+}
+
+.blog-highlight-title {
+  margin-bottom: 7px;
+
+  color: #1e40af;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.blog-highlight-box p {
+  margin: 0 !important;
+
+  color: #475569 !important;
+
+  font-size: 11px !important;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.blog-checklist {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 25px 0;
+
+  padding: 20px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  background: #f8fafc;
+}
+
+.blog-checklist div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #475569;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.blog-checklist span {
+  width: 20px;
+  height: 20px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #dcfce7;
+
+  color: #16a34a;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .blog-lead {
+    font-size: 14px !important;
+  }
+
+  .blog-demo-image img {
+    max-height: 280px;
+  }
+
+  .blog-table-wrapper {
+    margin-left: -5px;
+
+    width: calc(100% + 10px);
+  }
+
+}

@@ -1,0 +1,799 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(37, 99, 235, 0.08),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.hero-container {
+  width: min(100% - 40px, 1280px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 80px 0 100px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  max-width: 680px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.hero-status {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 13px;
+  margin-bottom: 24px;
+
+  border: 1px solid #dbeafe;
+  border-radius: 50px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 4px rgba(34, 197, 94, 0.12);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.hero-title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.08;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 800;
+}
+
+.hero-name {
+  color: #2563eb;
+}
+
+.hero-role {
+  color: #111827;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 610px;
+
+  margin: 26px 0 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.hero-tech {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.hero-tech span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #475569;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow:
+    0 3px 10px rgba(15, 23, 42, 0.03);
+}
+
+.hero-tech svg {
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.hero-btn {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 18px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+.hero-btn-primary:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+.hero-btn-secondary {
+  border: 1px solid #dbe1e8;
+
+  background: #ffffff;
+
+  color: #334155;
+}
+
+.hero-btn-secondary:hover {
+  border-color: #bfdbfe;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.hero-social {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-top: 35px;
+}
+
+.social-label {
+  color: #94a3b8;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border-color: #bfdbfe;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   ORBITS
+========================================================= */
+
+.hero-orbit {
+  position: absolute;
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.orbit-one {
+  width: 460px;
+  height: 460px;
+}
+
+.orbit-two {
+  width: 360px;
+  height: 360px;
+
+  border-style: dashed;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE FRAME
+========================================================= */
+
+.hero-image-wrapper {
+  position: relative;
+  z-index: 2;
+
+  width: 330px;
+  height: 420px;
+
+  padding: 8px;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  border-radius: 175px 175px 32px 32px;
+
+  background: linear-gradient(
+    145deg,
+    #2563eb,
+    #60a5fa
+  );
+
+  box-shadow:
+    0 30px 70px rgba(37, 99, 235, 0.20);
+}
+
+
+/* =========================================================
+   IMAGE CONTAINER
+========================================================= */
+
+.hero-image-placeholder {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  border-radius: 167px 167px 24px 24px;
+
+  /*
+    This background is visible only where the PNG
+    has transparent pixels.
+  */
+  background:
+    linear-gradient(
+      145deg,
+      #e0f2fe,
+      #f8fafc
+    );
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.hero-image-placeholder img {
+  display: block;
+
+  /*
+    IMPORTANT:
+    Don't force width + height together.
+    The natural aspect ratio is preserved.
+  */
+  width: auto;
+  height: 100%;
+
+  max-width: 100%;
+
+  object-fit: contain;
+
+  object-position: center bottom;
+
+  /*
+    Prevents accidental inline-image spacing.
+  */
+  vertical-align: bottom;
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.floating-card {
+  position: absolute;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.10);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  animation: float-card 4s ease-in-out infinite;
+}
+
+.floating-card svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+}
+
+.floating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-card strong {
+  color: #1e293b;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.floating-card span {
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.card-code {
+  top: 95px;
+  left: 0;
+}
+
+.card-dsa {
+  right: 0;
+  bottom: 90px;
+
+  animation-delay: 1.2s;
+}
+
+
+@keyframes float-card {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 25px;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+
+  transform: translateX(-50%);
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 28px;
+
+  background: linear-gradient(
+    to bottom,
+    #2563eb,
+    transparent
+  );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .hero-container {
+    grid-template-columns: 1fr 0.8fr;
+
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: clamp(40px, 5vw, 58px);
+  }
+
+  .hero-image-wrapper {
+    width: 285px;
+    height: 365px;
+  }
+
+  .orbit-one {
+    width: 400px;
+    height: 400px;
+  }
+
+  .orbit-two {
+    width: 310px;
+    height: 310px;
+  }
+
+  .card-code {
+    left: -15px;
+  }
+
+  .card-dsa {
+    right: -15px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    padding: 65px 0 90px;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 720px;
+
+    margin: 0 auto;
+  }
+
+  .hero-status {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-tech,
+  .hero-actions,
+  .hero-social {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 470px;
+
+    margin-top: 10px;
+  }
+
+  .hero-image-wrapper {
+    width: 290px;
+    height: 370px;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .card-code {
+    left: 8%;
+  }
+
+  .card-dsa {
+    right: 8%;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .hero-container {
+    width: calc(100% - 28px);
+
+    padding: 50px 0 70px;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 10vw, 46px);
+
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 405px;
+  }
+
+  .hero-image-wrapper {
+    width: 250px;
+    height: 325px;
+
+    padding: 7px;
+
+    border-radius: 135px 135px 28px 28px;
+  }
+
+  .hero-image-placeholder {
+    border-radius: 128px 128px 21px 21px;
+  }
+
+  .orbit-one {
+    width: 330px;
+    height: 330px;
+  }
+
+  .orbit-two {
+    width: 270px;
+    height: 270px;
+  }
+
+  .floating-card {
+    padding: 9px 11px;
+  }
+
+  .floating-card strong {
+    font-size: 10px;
+  }
+
+  .floating-card span {
+    font-size: 9px;
+  }
+
+  .card-code {
+    top: 45px;
+    left: 0;
+  }
+
+  .card-dsa {
+    right: 0;
+    bottom: 45px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-status {
+    font-size: 10px;
+  }
+
+  .hero-visual {
+    min-height: 365px;
+  }
+
+  .hero-image-wrapper {
+    width: 220px;
+    height: 290px;
+  }
+
+  .orbit-one {
+    width: 290px;
+    height: 290px;
+  }
+
+  .orbit-two {
+    width: 235px;
+    height: 235px;
+  }
+
+  .floating-card {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .floating-card {
+    animation: none;
+  }
+
+  .hero-btn,
+  .social-links a {
+    transition: none;
+  }
+}
