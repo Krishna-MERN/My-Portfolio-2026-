@@ -14,9 +14,11 @@ import {
   FaInstagram,
   FaFacebookF,
   FaXTwitter,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 import "../styles/Footer.css";
+import { SiLeetcode } from "react-icons/si";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -70,7 +72,7 @@ function Footer() {
                 <FaWhatsapp size={19} />
               </a>
 
-              <a href={socialLinks.facebook} target="_blank" rel="noreferrer">
+              <a href="" target="_blank" rel="noreferrer">
                 <FaFacebookF size={19} />
               </a>
 
@@ -83,17 +85,10 @@ function Footer() {
                 <FaGithub size={18} />
               </a>
 
-              <a
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn size={18} />
-              </a>
+              
 
               <a
-                href={socialLinks.leetcode}
+                href="https://leetcode.com/u/Krishna-Kumar-Shukla/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"

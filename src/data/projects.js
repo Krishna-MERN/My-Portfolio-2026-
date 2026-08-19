@@ -175,7 +175,7 @@ const projects = [
 
     screenshots: [
       {
-        image: "/projects/project-2/dashboard.png",
+        image: "/",
         title: "Project Dashboard",
       },
     ],
