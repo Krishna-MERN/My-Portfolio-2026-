@@ -13,7 +13,7 @@ import {
  
 } from "react-icons/fa6";
 
-import "../styles/GithubActivity.css";
+import "../styles/GitHubActivity.css";
 
 
 function GitHubActivity() {
