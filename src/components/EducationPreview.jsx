@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 
 import "../styles/EducationPreview.css";
+import { Link } from "react-router-dom";
 
 
 function EducationPreview() {
@@ -20,25 +21,25 @@ function EducationPreview() {
       score: "CGPA: 8.3",
     },
 
-    {
-      degree: "Higher Secondary Certificate (HSC)",
-      field: "Science (PCM)",
-      institution: "R V P I College Pithla Ayodhya",
-      location: "India",
-      duration: "2020 – 2021",
-      status: "Completed",
-      score: "87.4 %",
-    },
+    // {
+    //   degree: "Higher Secondary Certificate (HSC)",
+    //   field: "Science (PCM)",
+    //   institution: "R V P I College Pithla Ayodhya",
+    //   location: "India",
+    //   duration: "2020 – 2021",
+    //   status: "Completed",
+    //   score: "87.4 %",
+    // },
 
-    {
-      degree: "Secondary School Certificate (SSC)",
-      field: "Science",
-      institution: "R V P I College Pithla Ayodhya",
-      location: "India",
-      duration: "2018 – 2019",
-      status: "Completed",
-      score: "85.17 %",
-    },
+    // {
+    //   degree: "Secondary School Certificate (SSC)",
+    //   field: "Science",
+    //   institution: "R V P I College Pithla Ayodhya",
+    //   location: "India",
+    //   duration: "2018 – 2019",
+    //   status: "Completed",
+    //   score: "85.17 %",
+    // },
   ];
 
 
@@ -176,15 +177,15 @@ function EducationPreview() {
 
         <div className="education-preview-footer">
 
-          <a
-            href="/education"
+          <Link
+            to="/education"
             className="education-preview-link"
           >
             View Complete Education
 
             <ArrowUpRight size={16} />
 
-          </a>
+          </Link>
 
         </div>
 

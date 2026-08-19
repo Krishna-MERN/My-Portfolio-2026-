@@ -14,19 +14,19 @@ function ExperiencePreview() {
   const experiences = [
     {
       id: 1,
-      role: "Software Developer Intern",
-      company: "Company Name",
-      location: "India / Remote",
-      duration: "Month 2025 – Month 2026",
+      role: "MERN Stack Developer Intern",
+      company: "Softpro India",
+      location: "Lucknow India",
+      duration: "June 2025 – August 2026",
       type: "Internship",
 
       description:
-        "Worked on developing responsive web applications and implementing practical software solutions using modern web technologies.",
+        "Worked on developing responsive web applications 'ExamPrep' and implementing practical software solutions using modern web technologies.",
 
       responsibilities: [
-        "Developed responsive and reusable UI components.",
+        "Developed responsive and reusable UI components for application.",
         "Worked with APIs and frontend-backend integration.",
-        "Collaborated on real-world software development tasks.",
+       
       ],
 
       technologies: [
@@ -38,30 +38,30 @@ function ExperiencePreview() {
     },
 
 
-    {
-      id: 2,
-      role: "Web Developer Intern",
-      company: "Company Name",
-      location: "India / Remote",
-      duration: "Month 2025 – Month 2025",
-      type: "Internship",
+    // {
+    //   id: 2,
+    //   role: "Web Developer Intern",
+    //   company: "Company Name",
+    //   location: "India / Remote",
+    //   duration: "Month 2025 – Month 2025",
+    //   type: "Internship",
 
-      description:
-        "Contributed to web development projects with a focus on responsive design, frontend development and user experience.",
+    //   description:
+    //     "Contributed to web development projects with a focus on responsive design, frontend development and user experience.",
 
-      responsibilities: [
-        "Created responsive website interfaces.",
-        "Implemented reusable frontend components.",
-        "Worked on improving website usability and performance.",
-      ],
+    //   responsibilities: [
+    //     "Created responsive website interfaces.",
+    //     "Implemented reusable frontend components.",
+    //     "Worked on improving website usability and performance.",
+    //   ],
 
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React.js",
-      ],
-    },
+    //   technologies: [
+    //     "HTML",
+    //     "CSS",
+    //     "JavaScript",
+    //     "React.js",
+    //   ],
+    // },
   ];
 
 

@@ -10,6 +10,7 @@ import {
 import projects from "../data/projects";
 
 import "../styles/ProjectPreview.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -201,8 +202,8 @@ function ProjectPreview() {
 
         <div className="project-preview-footer">
 
-          <a
-            href="/projects"
+          <Link 
+            to="projects"
             className="project-preview-all"
           >
 
@@ -210,7 +211,7 @@ function ProjectPreview() {
 
             <ArrowUpRight size={17} />
 
-          </a>
+          </Link>
 
         </div>
 

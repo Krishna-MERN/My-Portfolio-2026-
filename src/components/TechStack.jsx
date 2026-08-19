@@ -132,7 +132,7 @@ const categories = [
       // { name: "Next.js", icon: SiNextdotjs },
       // { name: "Redux", icon: SiRedux },
       // { name: "Redux Toolkit", icon: SiRedux },
-      // { name: "Bootstrap", icon: SiBootstrap },
+      { name: "Bootstrap", icon: SiBootstrap },
       // { name: "SASS / SCSS", icon: SiSass },
       // { name: "Material UI", icon: Code2 },
       // { name: "Angular", icon: Code2 },
@@ -164,13 +164,13 @@ const categories = [
 
       // { name: "Java Spring", icon: SiSpring },
       // { name: "Spring Boot", icon: SiSpringboot },
-      // { name: "REST API", icon: Code2 },
+      { name: "REST API", icon: Code2 },
       // { name: "GraphQL", icon: SiGraphql },
       // { name: "Socket.io", icon: SiSocketdotio },
-      // { name: "JWT", icon: SiJsonwebtokens },
+      { name: "JWT", icon: SiJsonwebtokens },
       // { name: "OAuth", icon: ShieldCheck },
       // { name: "Prisma", icon: SiPrisma },
-      // { name: "Mongoose", icon: SiMongoose },
+      { name: "Mongoose", icon: SiMongoose },
     ],
   },
 
@@ -192,12 +192,12 @@ const categories = [
 
       // FUTURE SKILLS
 
-      // { name: "MySQL", icon: SiMysql },
+      { name: "MySQL", icon: SiMysql },
       // { name: "PostgreSQL", icon: SiPostgresql },
       // { name: "Oracle", icon: SiOracle },
       // { name: "Redis", icon: SiRedis },
       // { name: "Firebase", icon: SiFirebase },
-      // { name: "SQL", icon: Database },
+      { name: "SQL", icon: Database },
       // { name: "NoSQL", icon: Database },
     ],
   },
@@ -223,12 +223,12 @@ const categories = [
       // FUTURE SKILLS
 
       // { name: "Docker", icon: FaDocker },
-      // { name: "AWS", icon: FaAws },
+      { name: "AWS", icon: FaAws },
       // { name: "Azure", icon: Cloud },
       // { name: "Google Cloud", icon: Cloud },
       // { name: "Linux", icon: FaLinux },
       // { name: "Kubernetes", icon: SiKubernetes },
-      // { name: "GitHub Actions", icon: SiGithubactions },
+      { name: "GitHub Actions", icon: SiGithubactions },
       // { name: "Terraform", icon: SiTerraform },
       // { name: "CI/CD", icon: Cloud },
       // { name: "Nginx", icon: Server },
@@ -257,7 +257,7 @@ const categories = [
 
       // FUTURE SKILLS
 
-      // { name: "IntelliJ IDEA", icon: Code2 },
+      { name: "IntelliJ IDEA", icon: Code2 },
       // { name: "Eclipse", icon: Code2 },
       // { name: "Docker Desktop", icon: FaDocker },
       // { name: "Figma", icon: Code2 },
@@ -282,10 +282,10 @@ const categories = [
 
       // { name: "Jest", icon: SiJest },
       // { name: "Cypress", icon: SiCypress },
-      // { name: "React Testing Library", icon: FaReact },
+      { name: "React Testing Library", icon: FaReact },
       // { name: "JUnit", icon: FaJava },
       // { name: "Selenium", icon: Code2 },
-      // { name: "Postman Testing", icon: SiPostman },
+      { name: "Postman Testing", icon: SiPostman },
     ],
   },
 
@@ -309,12 +309,12 @@ const categories = [
 
       // FUTURE / ADVANCED SKILLS
 
-      // { name: "OOP", icon: Code2 },
+      { name: "OOP", icon: Code2 },
       // { name: "DBMS", icon: Database },
-      // { name: "Operating Systems", icon: Monitor },
-      // { name: "Computer Networks", icon: Server },
-      // { name: "System Design", icon: Server },
-      // { name: "Design Patterns", icon: Code2 },
+      { name: "Operating Systems", icon: Monitor },
+      { name: "Computer Networks", icon: Server },
+      { name: "System Design", icon: Server },
+      { name: "Design Patterns", icon: Code2 },
       // { name: "Low Level Design", icon: Code2 },
       // { name: "High Level Design", icon: Server },
       // { name: "Multithreading", icon: Code2 },
@@ -335,16 +335,16 @@ const categories = [
 
       // FUTURE SKILLS
 
-      // { name: "Machine Learning", icon: Brain },
-      // { name: "Artificial Intelligence", icon: Brain },
-      // { name: "Generative AI", icon: Brain },
-      // { name: "OpenAI API", icon: Brain },
-      // { name: "Cyber Security", icon: ShieldCheck },
+      { name: "Machine Learning", icon: Brain },
+      { name: "Artificial Intelligence", icon: Brain },
+      { name: "Generative AI", icon: Brain },
+      { name: "OpenAI API", icon: Brain },
+      { name: "Cyber Security", icon: ShieldCheck },
       // { name: "Blockchain", icon: Code2 },
       // { name: "WebSockets", icon: Server },
       // { name: "Microservices", icon: Server },
       // { name: "Serverless", icon: Cloud },
-      // { name: "Web3", icon: Code2 },
+      { name: "Web3", icon: Code2 },
     ],
   },
 ];

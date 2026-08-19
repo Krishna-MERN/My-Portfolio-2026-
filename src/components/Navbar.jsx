@@ -25,7 +25,7 @@ import {
 import "../styles/Navbar.css";
 
 
-const resumeUrl = "YOUR_GOOGLE_DRIVE_RESUME_LINK";
+const resumeUrl = "https://drive.google.com/file/d/11aPhSXLojbNOzkeYVeTsxFQlrElAzTfc/view?usp=sharing";
 
 const socialLinks = {
   github: "https://github.com/Krishna-MERN",
@@ -93,7 +93,8 @@ function Navbar() {
             </div>
           </div>
 
-          <a href="/contact" onClick={closeMenu}>Contact</a>
+          
+          <Link to="contact" onClick={closeMenu}>Contact</Link>
 
           {/* Mobile Social Links */}
           <div className="mobile-socials">

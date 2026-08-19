@@ -10,6 +10,7 @@ import CodingProfiles from '../components/CodingProfiles'
 import GitHubActivity from '../components/GitHubActivity'
 import CallToAction from '../components/CallToAction'
 import UpdatesPreview from '../components/UpdatesPreview'
+import ResearchPreview from '../components/ResearchPreview'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
      {/* <FeaturedProjects/> */}
      <ProjectPreview/>
      <EducationPreview/>
+     <ResearchPreview/>
      <ExperiencePreview/>
      <CodingProfiles/>
      <GitHubActivity/>

@@ -6,37 +6,27 @@ import {
   Search,
   Sparkles,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import blogData from "../data/blogData";
 import "../styles/Blog.css";
 
 const Blog = () => {
-  const featuredPosts = blogData.filter(
-    (post) => post.featured
-  );
+  const featuredPosts = blogData.filter((post) => post.featured);
 
-  const latestPosts = blogData.filter(
-    (post) => !post.featured
-  );
+  const latestPosts = blogData.filter((post) => !post.featured);
 
-  const categories = [
-    "All",
-    ...new Set(blogData.map((post) => post.category)),
-  ];
+  const categories = ["All", ...new Set(blogData.map((post) => post.category))];
 
   return (
     <main className="blog-page">
-
       {/* =====================================================
           HERO
       ===================================================== */}
 
       <section className="blog-hero">
-
         <div className="blog-container">
-
           <div className="blog-hero-content">
-
             <span className="blog-eyebrow">
               <BookOpen size={13} />
               MY BLOG
@@ -48,53 +38,39 @@ const Blog = () => {
             </h1>
 
             <p>
-              I write about software development, programming,
-              technology, career growth, learning experiences and
-              things I discover while building products.
+              I write about software development, programming, technology,
+              career growth, learning experiences and things I discover while
+              building products.
             </p>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           BLOG CONTENT
       ===================================================== */}
 
       <section className="blog-content">
-
         <div className="blog-container">
-
-
           {/* =================================================
               CATEGORY FILTER
           ================================================= */}
 
           <div className="blog-toolbar">
-
             <div className="blog-categories">
-
               {categories.map((category, index) => (
                 <button
                   key={category}
                   className={
-                    index === 0
-                      ? "blog-category active"
-                      : "blog-category"
+                    index === 0 ? "blog-category active" : "blog-category"
                   }
                 >
                   {category}
                 </button>
               ))}
-
             </div>
 
-
             <div className="blog-search">
-
               <Search size={15} />
 
               <input
@@ -102,11 +78,8 @@ const Blog = () => {
                 placeholder="Search articles..."
                 aria-label="Search articles"
               />
-
             </div>
-
           </div>
-
 
           {/* =================================================
               FEATURED POSTS
@@ -114,9 +87,7 @@ const Blog = () => {
 
           {featuredPosts.length > 0 && (
             <section className="blog-featured">
-
               <div className="blog-section-heading">
-
                 <div>
                   <span>FEATURED</span>
 
@@ -126,59 +97,33 @@ const Blog = () => {
                 </div>
 
                 <Sparkles size={19} />
-
               </div>
 
-
               <div className="featured-blog-grid">
-
                 {featuredPosts.map((post) => (
-                  <article
-                    className="featured-blog-card"
-                    key={post.id}
-                  >
-
+                  <article className="featured-blog-card" key={post.id}>
                     <div className="featured-blog-top">
-
                       <span className="blog-post-category">
                         {post.category}
                       </span>
 
-                      <span className="blog-featured-label">
-                        Featured
-                      </span>
-
+                      <span className="blog-featured-label">Featured</span>
                     </div>
-
 
                     <div className="featured-blog-body">
+                      <h3>{post.title}</h3>
 
-                      <h3>
-                        {post.title}
-                      </h3>
-
-                      <p>
-                        {post.excerpt}
-                      </p>
-
+                      <p>{post.excerpt}</p>
 
                       <div className="blog-tags">
-
                         {post.tags.map((tag) => (
-                          <span key={tag}>
-                            {tag}
-                          </span>
+                          <span key={tag}>{tag}</span>
                         ))}
-
                       </div>
-
                     </div>
 
-
                     <div className="blog-card-footer">
-
                       <div className="blog-meta">
-
                         <span>
                           <CalendarDays size={12} />
                           {post.date}
@@ -188,36 +133,32 @@ const Blog = () => {
                           <Clock3 size={12} />
                           {post.readTime}
                         </span>
-
                       </div>
 
-                      <a
+                      {/* <a
                         href={`/blog/${post.id}`}
                         className="blog-read-link"
                       >
                         Read Article
                         <ArrowRight size={14} />
-                      </a>
-
+                      </a> */}
+                      <Link to={`/blog/${post.id}`} className="blog-read-link">
+                        Read Article
+                        <ArrowRight size={14} />
+                      </Link>
                     </div>
-
                   </article>
                 ))}
-
               </div>
-
             </section>
           )}
-
 
           {/* =================================================
               LATEST ARTICLES
           ================================================= */}
 
           <section className="blog-latest">
-
             <div className="blog-section-heading">
-
               <div>
                 <span>LATEST ARTICLES</span>
 
@@ -225,48 +166,25 @@ const Blog = () => {
                   From the <strong>blog.</strong>
                 </h2>
               </div>
-
             </div>
 
-
             <div className="latest-blog-grid">
-
               {latestPosts.map((post) => (
-                <article
-                  className="latest-blog-card"
-                  key={post.id}
-                >
+                <article className="latest-blog-card" key={post.id}>
+                  <div className="latest-blog-category">{post.category}</div>
 
-                  <div className="latest-blog-category">
-                    {post.category}
-                  </div>
+                  <h3>{post.title}</h3>
 
-
-                  <h3>
-                    {post.title}
-                  </h3>
-
-
-                  <p>
-                    {post.excerpt}
-                  </p>
-
+                  <p>{post.excerpt}</p>
 
                   <div className="latest-blog-tags">
-
                     {post.tags.map((tag) => (
-                      <span key={tag}>
-                        {tag}
-                      </span>
+                      <span key={tag}>{tag}</span>
                     ))}
-
                   </div>
 
-
                   <div className="latest-blog-footer">
-
                     <div className="blog-meta">
-
                       <span>
                         <CalendarDays size={12} />
                         {post.date}
@@ -276,40 +194,33 @@ const Blog = () => {
                         <Clock3 size={12} />
                         {post.readTime}
                       </span>
-
                     </div>
 
-
-                    <a
-                      href={`/blog/${post.id}`}
+                    <Link to={`/blog/${post.id}`}
                       aria-label={`Read ${post.title}`}
                     >
                       <ArrowRight size={15} />
-                    </a>
+                    </Link>
 
+                    {/* <Link to={`/blog/${post.id}`} className="blog-read-link">
+                        Read Article
+                        <ArrowRight size={14} />
+                      </Link> */}
                   </div>
-
                 </article>
               ))}
-
             </div>
-
           </section>
-
 
           {/* =================================================
               BLOG CTA
           ================================================= */}
 
           <section className="blog-cta">
-
             <div className="blog-cta-content">
-
               <BookOpen size={24} />
 
-              <span>
-                KEEP LEARNING
-              </span>
+              <span>KEEP LEARNING</span>
 
               <h2>
                 Always learning.
@@ -317,24 +228,18 @@ const Blog = () => {
               </h2>
 
               <p>
-                Follow my journey as I continue learning new
-                technologies, solving problems and building
-                software.
+                Follow my journey as I continue learning new technologies,
+                solving problems and building software.
               </p>
 
               <a href="/projects">
                 Explore My Projects
                 <ArrowRight size={15} />
               </a>
-
             </div>
-
           </section>
-
         </div>
-
       </section>
-
     </main>
   );
 };

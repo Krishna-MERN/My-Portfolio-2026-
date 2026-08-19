@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, Code2, Trophy } from "lucide-react";
+import { ArrowUpRight, Download, Code2, Trophy, } from "lucide-react";
 import { FaInstagram, FaFacebookF, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
@@ -7,6 +7,7 @@ import { SiLeetcode, SiHackerrank } from "react-icons/si";
 import "../styles/Hero.css";
 
 import heroProfile from "../assets/profilephoto.png";
+import { Link } from "react-router-dom";
 
 const socialLinks = {
   github: "https://github.com/Krishna-MERN/Datara-Softwares",
@@ -65,13 +66,14 @@ function Hero() {
 
           {/* CTA Buttons */}
           <div className="hero-actions">
-            <a href="#projects" className="hero-btn hero-btn-primary">
+
+            <Link to="projects" className="hero-btn hero-btn-primary">
               View My Work
               <ArrowUpRight size={18} />
-            </a>
+            </Link>
 
             <a
-              href={resumeUrl}
+              href={"https://drive.google.com/file/d/11aPhSXLojbNOzkeYVeTsxFQlrElAzTfc/view?usp=sharing"}
               target="_blank"
               rel="noreferrer"
               className="hero-btn hero-btn-secondary"
