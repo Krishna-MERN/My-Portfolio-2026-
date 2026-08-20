@@ -38,6 +38,12 @@ function Updates() {
   };
 
 
+  // Latest ID first, oldest ID last
+  const sortedUpdates = [...updates].sort(
+    (a, b) => Number(b.id) - Number(a.id)
+  );
+
+
   return (
     <main className="updates-page">
 
@@ -105,7 +111,7 @@ function Updates() {
 
           <div className="updates-timeline">
 
-            {updates.map((update, index) => (
+            {sortedUpdates.map((update, index) => (
 
               <article
                 className="update-item"
@@ -120,7 +126,7 @@ function Updates() {
                     <span />
                   </div>
 
-                  {index !== updates.length - 1 && (
+                  {index !== sortedUpdates.length - 1 && (
                     <div className="update-line" />
                   )}
 

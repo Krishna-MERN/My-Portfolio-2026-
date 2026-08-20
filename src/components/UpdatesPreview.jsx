@@ -14,8 +14,10 @@ import "../styles/UpdatesPreview.css";
 
 function UpdatesPreview() {
 
-  // Show only the latest 2 updates
-  const latestUpdates = updates.slice(0, 2);
+  // Sort latest ID first, then show only the latest 2 updates
+  const latestUpdates = [...updates]
+    .sort((a, b) => Number(b.id) - Number(a.id))
+    .slice(0, 2);
 
 
   const getCategoryIcon = (category) => {

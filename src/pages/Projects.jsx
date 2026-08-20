@@ -9,12 +9,13 @@ import {
   CircleDot,
   ArrowRight,
 } from "lucide-react";
+
 import {
   FaGithub,
-//   FaLinkedinIn,
-//   FaInstagram,
-//   FaFacebookF,
-//   FaXTwitter,
+  // FaLinkedinIn,
+  // FaInstagram,
+  // FaFacebookF,
+  // FaXTwitter,
 } from "react-icons/fa6";
 
 import projects from "../data/projects";
@@ -23,6 +24,18 @@ import "../styles/Projects.css";
 
 
 function Projects() {
+
+  // =========================================================
+  // SORT PROJECTS
+  // Latest / highest ID first
+  // Oldest / lowest ID last
+  // =========================================================
+
+  const sortedProjects = [...projects].sort(
+    (a, b) => Number(b.id) - Number(a.id)
+  );
+
+
   return (
     <main className="projects-page">
 
@@ -55,11 +68,20 @@ function Projects() {
           <div className="projects-stats">
 
             <div>
-              <strong>{projects.length}</strong>
-              <span>Projects</span>
+
+              <strong>
+                {projects.length}
+              </strong>
+
+              <span>
+                Projects
+              </span>
+
             </div>
 
+
             <div>
+
               <strong>
                 {new Set(
                   projects.flatMap(
@@ -70,12 +92,24 @@ function Projects() {
                   )
                 ).size}
               </strong>
-              <span>Technologies</span>
+
+              <span>
+                Technologies
+              </span>
+
             </div>
 
+
             <div>
-              <strong>Full Stack</strong>
-              <span>Development Focus</span>
+
+              <strong>
+                Full Stack
+              </strong>
+
+              <span>
+                Development Focus
+              </span>
+
             </div>
 
           </div>
@@ -95,7 +129,9 @@ function Projects() {
 
           <div className="projects-list">
 
-            {projects.map((project) => (
+            {/* Latest project first */}
+
+            {sortedProjects.map((project) => (
 
               <article
                 className="project-case-study"
@@ -138,30 +174,53 @@ function Projects() {
                 <div className="project-meta">
 
                   <div>
+
                     <CalendarDays size={15} />
 
                     <span>
-                      <small>Year</small>
+
+                      <small>
+                        Year
+                      </small>
+
                       {project.year}
+
                     </span>
+
                   </div>
 
+
                   <div>
+
                     <UserRound size={15} />
 
                     <span>
-                      <small>Role</small>
+
+                      <small>
+                        Role
+                      </small>
+
                       {project.role}
+
                     </span>
+
                   </div>
 
+
                   <div>
+
                     <CircleDot size={15} />
 
                     <span>
-                      <small>Status</small>
+
+                      <small>
+                        Status
+                      </small>
+
                       {project.status}
+
                     </span>
+
                   </div>
 
                 </div>
@@ -187,9 +246,11 @@ function Projects() {
                         />
 
                         <div className="screenshot-overlay">
+
                           <span>
                             {screenshot.title}
                           </span>
+
                         </div>
 
                       </div>
@@ -249,8 +310,11 @@ function Projects() {
                 <div className="project-solution">
 
                   <div className="project-solution-icon">
+
                     <Layers3 size={22} />
+
                   </div>
+
 
                   <div>
 
@@ -282,6 +346,7 @@ function Projects() {
                     <Code2 size={19} />
 
                     <div>
+
                       <span className="project-section-label">
                         TECHNOLOGY
                       </span>
@@ -289,6 +354,7 @@ function Projects() {
                       <h3>
                         Built with
                       </h3>
+
                     </div>
 
                   </div>
@@ -418,10 +484,12 @@ function Projects() {
 
                           {index <
                             project.architecture.length - 1 && (
+
                             <ArrowRight
                               className="architecture-arrow"
                               size={15}
                             />
+
                           )}
 
                         </div>
@@ -599,6 +667,7 @@ function Projects() {
             href="/contact"
             className="projects-cta-button"
           >
+
             Let's Connect
 
             <ArrowUpRight size={17} />

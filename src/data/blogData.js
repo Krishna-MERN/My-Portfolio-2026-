@@ -7,7 +7,7 @@ const blogData = [
     category: "Career",
     date: "August 2026",
     readTime: "5 min read",
-    featured: true,
+    featured: false,
     tags: ["Career", "Software Development", "Learning"],
   },
 
@@ -19,7 +19,7 @@ const blogData = [
     category: "Programming",
     date: "August 2026",
     readTime: "6 min read",
-    featured: true,
+    featured: false,
     tags: ["Java", "DSA", "Programming"],
   },
 
@@ -29,7 +29,7 @@ const blogData = [
     excerpt:
       "Lessons learned while working with MongoDB, Express.js, React and Node.js to build full-stack applications.",
     category: "Development",
-    date: "July 2026",
+    date: "July 2025",
     readTime: "7 min read",
     featured: false,
     tags: ["MERN", "React", "Node.js"],
@@ -41,7 +41,7 @@ const blogData = [
     excerpt:
       "Design decisions, responsive layouts and development lessons from building my personal developer portfolio.",
     category: "Development",
-    date: "July 2026",
+    date: "August 2025",
     readTime: "5 min read",
     featured: false,
     tags: ["React", "Portfolio", "CSS"],
@@ -53,7 +53,7 @@ const blogData = [
     excerpt:
       "My practical approach to learning new technologies, building projects and turning theoretical knowledge into practical skills.",
     category: "Learning",
-    date: "June 2026",
+    date: "November 2025",
     readTime: "4 min read",
     featured: false,
     tags: ["Learning", "Development", "Career"],
@@ -64,14 +64,14 @@ const blogData = [
   FUTURE BLOG POSTS
   Uncomment when you publish them.
   ============================================================
-
+*/
   {
     id: 6,
     title: "Understanding React Component Architecture",
     excerpt:
       "A practical guide to organizing React applications into reusable and maintainable components.",
     category: "React",
-    date: "September 2026",
+    date: "March 2026",
     readTime: "8 min read",
     featured: false,
     tags: ["React", "JavaScript", "Frontend"],
@@ -83,13 +83,13 @@ const blogData = [
     excerpt:
       "The resources, topics and strategies I use while preparing for software development interviews.",
     category: "Career",
-    date: "September 2026",
+    date: "April 2026",
     readTime: "6 min read",
     featured: false,
     tags: ["Interview", "DSA", "Career"],
   },
 
-  */
+  
 ];
 
 export default blogData;

@@ -1,7 +1,8 @@
+
 const updates = [
   {
     id: 1,
-    date: "August 18, 2026",
+    date: "june 23, 2025",
     category: "Learning",
     title: "Started Advanced Java & DSA Practice",
     description:
@@ -11,7 +12,7 @@ const updates = [
 
   {
     id: 2,
-    date: "August 16, 2026",
+    date: "September 19, 2025",
     category: "Project",
     title: "Working on Personal Developer Portfolio",
     description:
@@ -21,7 +22,7 @@ const updates = [
 
   {
     id: 3,
-    date: "August 12, 2026",
+    date: "November 12, 2025",
     category: "Project",
     title: "Improving Automated Bus Scheduling System",
     description:
@@ -31,7 +32,7 @@ const updates = [
 
   {
     id: 4,
-    date: "August 08, 2026",
+    date: "January 08, 2026",
     category: "Career",
     title: "Actively Exploring Software Development Opportunities",
     description:
@@ -41,7 +42,7 @@ const updates = [
 
   {
     id: 5,
-    date: "August 05, 2026",
+    date: "March 05, 2026",
     category: "Learning",
     title: "Strengthening React Development Skills",
     description:

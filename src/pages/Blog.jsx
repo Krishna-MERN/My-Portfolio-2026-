@@ -6,15 +6,30 @@ import {
   Search,
   Sparkles,
 } from "lucide-react";
+
 import { Link } from "react-router-dom";
 
 import blogData from "../data/blogData";
+
 import "../styles/Blog.css";
 
 const Blog = () => {
+  // =========================================================
+  // FEATURED POSTS
+  // Featured logic remains unchanged
+  // =========================================================
+
   const featuredPosts = blogData.filter((post) => post.featured);
 
-  const latestPosts = blogData.filter((post) => !post.featured);
+  // =========================================================
+  // LATEST POSTS
+  // Highest ID first
+  // Lowest ID last
+  // =========================================================
+
+  const latestPosts = blogData
+    .filter((post) => !post.featured)
+    .sort((a, b) => Number(b.id) - Number(a.id));
 
   const categories = ["All", ...new Set(blogData.map((post) => post.category))];
 
@@ -34,7 +49,7 @@ const Blog = () => {
 
             <h1>
               Thoughts,
-              <span> ideas & lessons.</span>
+              <span>ideas & lessons.</span>
             </h1>
 
             <p>
@@ -92,7 +107,8 @@ const Blog = () => {
                   <span>FEATURED</span>
 
                   <h2>
-                    Featured <strong>articles.</strong>
+                    Featured
+                    <strong>articles.</strong>
                   </h2>
                 </div>
 
@@ -126,22 +142,17 @@ const Blog = () => {
                       <div className="blog-meta">
                         <span>
                           <CalendarDays size={12} />
+
                           {post.date}
                         </span>
 
                         <span>
                           <Clock3 size={12} />
+
                           {post.readTime}
                         </span>
                       </div>
 
-                      {/* <a
-                        href={`/blog/${post.id}`}
-                        className="blog-read-link"
-                      >
-                        Read Article
-                        <ArrowRight size={14} />
-                      </a> */}
                       <Link to={`/blog/${post.id}`} className="blog-read-link">
                         Read Article
                         <ArrowRight size={14} />
@@ -163,7 +174,8 @@ const Blog = () => {
                 <span>LATEST ARTICLES</span>
 
                 <h2>
-                  From the <strong>blog.</strong>
+                  From the
+                  <strong>blog.</strong>
                 </h2>
               </div>
             </div>
@@ -187,25 +199,23 @@ const Blog = () => {
                     <div className="blog-meta">
                       <span>
                         <CalendarDays size={12} />
+
                         {post.date}
                       </span>
 
                       <span>
                         <Clock3 size={12} />
+
                         {post.readTime}
                       </span>
                     </div>
 
-                    <Link to={`/blog/${post.id}`}
+                    <Link
+                      to={`/blog/${post.id}`}
                       aria-label={`Read ${post.title}`}
                     >
                       <ArrowRight size={15} />
                     </Link>
-
-                    {/* <Link to={`/blog/${post.id}`} className="blog-read-link">
-                        Read Article
-                        <ArrowRight size={14} />
-                      </Link> */}
                   </div>
                 </article>
               ))}
@@ -224,7 +234,7 @@ const Blog = () => {
 
               <h2>
                 Always learning.
-                <strong> Always building.</strong>
+                <strong>Always building.</strong>
               </h2>
 
               <p>
@@ -232,10 +242,10 @@ const Blog = () => {
                 solving problems and building software.
               </p>
 
-              <a href="/projects">
+              <Link to="/projects">
                 Explore My Projects
                 <ArrowRight size={15} />
-              </a>
+              </Link>
             </div>
           </section>
         </div>

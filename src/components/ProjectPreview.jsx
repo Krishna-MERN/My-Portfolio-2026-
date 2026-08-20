@@ -2,22 +2,30 @@ import {
   ArrowUpRight,
   ExternalLink,
 } from "lucide-react";
+
 import {
   FaGithub,
- 
 } from "react-icons/fa6";
 
 import projects from "../data/projects";
 
 import "../styles/ProjectPreview.css";
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
 
 
 function ProjectPreview() {
 
-  // Show only the first 3 projects on Home
-  const featuredProjects = projects.slice(0, 3);
+  // =========================================================
+  // SORT PROJECTS
+  // Latest / highest ID first
+  // Oldest / lowest ID last
+  // =========================================================
+
+  const featuredProjects = [...projects]
+    .sort((a, b) => Number(b.id) - Number(a.id))
+    .slice(0, 3);
+
 
   return (
     <section className="project-preview">
@@ -144,9 +152,11 @@ function ProjectPreview() {
                     ))}
 
                   {project.technologies.length > 4 && (
+
                     <span>
                       +{project.technologies.length - 4}
                     </span>
+
                   )}
 
                 </div>
@@ -202,8 +212,8 @@ function ProjectPreview() {
 
         <div className="project-preview-footer">
 
-          <Link 
-            to="projects"
+          <Link
+            to="/projects"
             className="project-preview-all"
           >
 
