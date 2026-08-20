@@ -360,58 +360,58 @@ const projects = [
      ADD YOUR NEXT PROJECT HERE
   ===================================================== */
 
-  {
-    id: 4,
-    number: "04",
-    title: "My Next Project is comming soon...",
-    category: "Mistry..",
-    year: "2026",
-    role: "Developer",
-    status: "Ongoing",
+  // {
+  //   id: 4,
+  //   number: "04",
+  //   title: "My Next Project is comming soon...",
+  //   category: "Mistry..",
+  //   year: "2026",
+  //   role: "Developer",
+  //   status: "Ongoing",
 
-    shortDescription:
-      "Add a short professional description of your project here.",
+  //   shortDescription:
+  //     "Add a short professional description of your project here.",
 
-    overview: "Add a detailed overview of the project here.",
+  //   overview: "Add a detailed overview of the project here.",
 
-    problem: "Describe the problem this project was designed to solve.",
+  //   problem: "Describe the problem this project was designed to solve.",
 
-    solution: "Explain the approach and solution you implemented.",
+  //   solution: "Explain the approach and solution you implemented.",
 
-    technologies: [
-      {
-        name: "React.js",
-        purpose: "Frontend UI",
-      },
-      {
-        name: "JavaScript",
-        purpose: "Application logic",
-      },
-    ],
+  //   technologies: [
+  //     {
+  //       name: "React.js",
+  //       purpose: "Frontend UI",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //       purpose: "Application logic",
+  //     },
+  //   ],
 
-    features: ["Feature one", "Feature two", "Feature three", "Feature four"],
+  //   features: ["Feature one", "Feature two", "Feature three", "Feature four"],
 
-    challenges: [
-      {
-        title: "Challenge",
-        description: "Describe an important development challenge.",
-      },
-    ],
+  //   challenges: [
+  //     {
+  //       title: "Challenge",
+  //       description: "Describe an important development challenge.",
+  //     },
+  //   ],
 
-    architecture: ["React.js", "JavaScript"],
+  //   architecture: ["React.js", "JavaScript"],
 
-    screenshots: [
-      {
-        image: "/",
-        title: "Project Dashboard",
-      },
-    ],
+  //   screenshots: [
+  //     {
+  //       image: "/",
+  //       title: "Project Dashboard",
+  //     },
+  //   ],
 
-    futureImprovements: ["Future improvement one", "Future improvement two"],
+  //   futureImprovements: ["Future improvement one", "Future improvement two"],
 
-    github: "#",
-    live: "#",
-  },
+  //   github: "#",
+  //   live: "#",
+  // },
 ];
 
 export default projects;
