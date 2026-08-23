@@ -29,35 +29,36 @@ const Certifications = () => {
     // =======================================================
 
     {
-      title: "Java Programming",
-      issuer: "Certification Provider",
-      date: "2026",
-      category: "Programming",
-      credentialId: "XXXX-XXXX",
+      title: "Introduction to Machine Learning",
+      issuer: "NPTEL ONLINE CERTIFICATION",
+      date: "Apr - 2026",
+      category: "Machine Learning",
+      credentialId: "NPTEL26CS74S159800272",
       description:
-        "Certification covering Java programming fundamentals, object-oriented programming and core programming concepts.",
+        "Topic covered Supervised Learning , UnSupervised Learning , Reinforcement Learning Regression , Clustering etc.",
       skills: [
-        "Java",
-        "OOP",
-        "Programming",
+        "Algorithms",
+        "Java Programming ",
+        "OOP Concept",
+        "DSA",
       ],
-      certificateUrl: "#",
+      certificateUrl: "https://drive.google.com/file/d/1Byn1A_K381mPY4JrTJ0cQNmHzFOZFe69/view?usp=sharing",
     },
 
     {
-      title: "Web Development",
-      issuer: "Certification Provider",
-      date: "2026",
-      category: "Web Development",
-      credentialId: "XXXX-XXXX",
+      title: "Programming In Java",
+      issuer: "NPTEL ONLINE CERTIFICATION",
+      date: "Apr - 2025",
+      category: "Programming",
+      credentialId: "NPTEL25CS57S1250600442",
       description:
-        "Certification focused on modern web development concepts, responsive interfaces and frontend technologies.",
+        "Certification covering Java programming fundamentals, object-oriented programming and core programming concepts",
       skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
+        "Java code",
+        "OOPs Concepts",
+        "Algorithm",
       ],
-      certificateUrl: "#",
+      certificateUrl: "https://drive.google.com/file/d/1Oz9iqheusjOwKGftpg2KWhh-KXL2G_8j/view?usp=sharing",
     },
 
 
@@ -67,51 +68,137 @@ const Certifications = () => {
     // =======================================================
 
     {
-      title: "React.js Certification",
-      issuer: "Certification Provider",
-      date: "2026",
-      category: "Frontend",
-      credentialId: "XXXX-XXXX",
+      title: "CSV-22-01_Java for Beginners Run-1",
+      issuer: "Department of Computer Science & Engineering",
+      date: "Nov - 2022",
+      category: "Programming",
+      credentialId: "64882fe2-57b8-4c97-b958-08a540e3bed3",
       description:
-        "Certification covering React.js concepts, components, hooks and modern frontend development.",
+        "Certification covering Basics of JAVA , Conditional statements , Control statement , basics of OOPs .",
       skills: [
-        "React",
-        "JavaScript",
-        "Frontend Development",
+        "Basic Java",
+        "Loops",
+        "Basic of OOPs",
       ],
-      certificateUrl: "https://...",
+      certificateUrl: "https://drive.google.com/file/d/1nWyaWSB5jXjOyNMkpIX5q-UwJ2Dy6D_b/view?usp=sharing",
     },
 
     {
-      title: "MongoDB Developer Certification",
-      issuer: "MongoDB",
-      date: "2026",
-      category: "Database",
-      credentialId: "XXXX-XXXX",
+      title: "Frontend Development",
+      issuer: "MANYVERSITY",
+      date: "Feb - 2024",
+      category: "Development",
+      credentialId: "65e5c1430ca97793b3b05ff3",
       description:
-        "Certification covering MongoDB database development and data management concepts.",
+        "Certification covering HTML , CSS , some parts of JavaScript concepts.",
       skills: [
-        "MongoDB",
-        "Database",
-        "NoSQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
       ],
-      certificateUrl: "https://...",
+      certificateUrl: "https://drive.google.com/file/d/1L-_TcXka63wSOs4Rqrs4JtT-k0qEblWF/view?usp=sharing",
     },
 
-    // {
-    //   title: "AWS Cloud Practitioner",
-    //   issuer: "Amazon Web Services",
-    //   date: "2026",
-    //   category: "Cloud",
-    //   credentialId: "XXXX-XXXX",
-    //   description:
-    //     "Certification demonstrating foundational knowledge of cloud computing and AWS services.",
-    //   skills: [
-    //     "AWS",
-    //     "Cloud Computing",
-    //   ],
-    //   certificateUrl: "https://...",
-    // },
+    {
+      title: "CSS , BOOTSTRAP , JAVASCRIPT Web Development Course",
+      issuer: "Udemy",
+      date: "Jul - 2024",
+      category: "Development",
+      credentialId: "UC-bb698211-20b8-4bef-b83e-f49fae3d60ea",
+      description:
+       " Certification covering HTML , CSS , some parts of JavaScript concepts.",
+      skills: [
+        "Styling",
+        "Scripting",
+        "Development",
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1FCqf35JG0Hqt2tuT0iM_4Ry9dsad9zIC/view?usp=sharing",
+    },
+    {
+      title: "Applied Machine Learning and Deep Learning with Python",
+      issuer: "Department of Computer Application",
+      date: "Jun - 2026",
+      category: "Machine Learning",
+      credentialId: "CAV-25-01/AMLDP/2026/6a51030c-b9d0-4dfe-a723-08a79df5633c",
+      description:
+        "Certification demonstrating Python Programming , Machine Learning , Deep Learning  etc.",
+      skills: [
+        "Python ",
+        "Machine Learning ",
+        "Deep Learning",
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/12uHC6V05ZnhoVAQKXWY5bEiF3LhW9qMD/view?usp=sharing",
+    },
+
+    {
+      title: "R Programming",
+      issuer: "IUCAT",
+      date: "Jul - 2024",
+      category: "Programming",
+      credentialId: "CAIUCAT202324E00022 ",
+      description:
+        "Certification demonstrating R Programming , Machine Learning , Deep Learning  etc.",
+      skills: [
+        "R Programming",
+        
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1ydwAeJyyvzZOiU9cPRn2Lodnb9P9_x3d/view?usp=sharing",
+    },
+
+    {
+        title: "Operating System Algorithms with UNIX Commands",
+      issuer: "IUCAT",
+      date: "Apr - 2024",
+      category: "System Design",
+      credentialId: "CAV-25-01/OSAU/2025/0023 ",
+      description:
+        "Certification demonstrating Operating System , Algorithms , Commands  etc.",
+      skills: [
+        "Operating System",
+         "Algorithms",
+        "UNIX Commands",
+        
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1LeQMgU3qQCf94LiWUYVpQ--jHqAJPuFl/view?usp=sharing",
+    },
+    {
+        title: "“Full Stack Development with PHP & MySQL",
+      issuer: "IUCAT",
+      date: "Oct - 2024",
+      category: "Development",
+      credentialId: "IUCAT/FSD/2024/0022 ",
+      description:
+        "Certification demonstrating Development phases , php and SQL Quaries  etc.",
+      skills: [
+        "Development",
+         "Website Designing",
+        "SQL Quaries",
+        
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1T7w4JAJob5VEH0-EOgUFo3DGsn5ZFnYm/view?usp=sharing",
+    },
+    {
+        title: "Data Structure using Advanced C Programming",
+      issuer: "IUCAT",
+      date: "Dec - 2024",
+      category: "Programming",
+      credentialId: "IUCAT/FSD/2024/002 ",
+      description:
+        "Certification demonstrating Data Structure and Algorithms for structuring the data using Advanced C Programming",
+      skills: [
+        "Programming",
+         "Data Structure",
+        "C",
+        
+       
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1qvZCZAu5l_D3zUXvWHNP2oSmYAtvBv99/view?usp=sharing",
+    },
 
   ];
 
