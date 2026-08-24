@@ -16,47 +16,112 @@ import {
 } from "react-icons/fa6";
 
 import {
-  // FaLinkedinIn,
   FaFacebookF,
   FaWhatsapp,
 } from "react-icons/fa";
 
 import "../styles/Contact.css";
 
+
 const Contact = () => {
+
+  // =========================================================
+  // WHATSAPP NUMBER
+  // Change this number whenever required.
+  // Country code included, without + or spaces.
+  // =========================================================
+
+  const whatsappNumber = "917985687221";
+
+
+  // =========================================================
+  // CONTACT FORM
+  // =========================================================
+
   const handleSubmit = (e) => {
+
     e.preventDefault();
 
     const form = e.target;
 
-    const name = form.name.value;
-    const email = form.email.value;
-    const subject = form.subject.value;
-    const message = form.message.value;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
 
-    const mailSubject = encodeURIComponent(
-      subject || `Portfolio Contact from ${name}`
-    );
 
-    const mailBody = encodeURIComponent(
-      `Hello Krishna,
+    // =======================================================
+    // WHATSAPP MESSAGE
+    // =======================================================
+
+    const whatsappMessage = `Hello Krishna,
+
+I visited your portfolio and would like to get in touch with you.
 
 Name: ${name}
 Email: ${email}
+Subject: ${subject}
 
 Message:
 ${message}
 
 Regards,
-${name}`
+${name}`;
+
+
+    // =======================================================
+    // ENCODE MESSAGE
+    // =======================================================
+
+    const encodedMessage = encodeURIComponent(
+      whatsappMessage
     );
 
-    window.location.href =
-      `mailto:mail.kkshukla@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+
+    // =======================================================
+    // WHATSAPP URL
+    // =======================================================
+
+    const whatsappURL =
+      `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+
+    // =======================================================
+    // OPEN WHATSAPP
+    // =======================================================
+
+    window.open(
+      whatsappURL,
+      "_blank",
+      "noopener,noreferrer"
+    );
+
   };
+
+
+  // =========================================================
+  // OPPORTUNITY WHATSAPP
+  // =========================================================
+
+  const opportunityMessage =
+    `Hello Krishna,
+
+I visited your portfolio and would like to discuss a job opportunity with you.
+
+I would like to know more about your availability and experience.
+
+Thank you.`;
+
+
+  const opportunityWhatsAppURL =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      opportunityMessage
+    )}`;
+
 
   return (
     <main className="contact-page">
+
 
       {/* =====================================================
           HERO
@@ -69,20 +134,31 @@ ${name}`
           <div className="contact-hero-content">
 
             <span className="contact-eyebrow">
+
               <MessageCircle size={13} />
+
               GET IN TOUCH
+
             </span>
 
+
             <h1>
-              Let's build
-              <span> something.</span>
+
+              Let's build 
+
+              <span>
+                 something.
+              </span>
+
             </h1>
+
 
             <p>
               Have a project idea, job opportunity, collaboration,
               or simply want to connect? Feel free to reach out.
               I would be happy to hear from you.
             </p>
+
 
             <div className="contact-availability">
 
@@ -101,6 +177,7 @@ ${name}`
       </section>
 
 
+
       {/* =====================================================
           CONTACT MAIN
       ===================================================== */}
@@ -110,6 +187,7 @@ ${name}`
         <div className="contact-container">
 
           <div className="contact-grid">
+
 
             {/* =================================================
                 LEFT INFORMATION
@@ -121,10 +199,17 @@ ${name}`
                 CONTACT INFORMATION
               </div>
 
+
               <h2>
+
                 Let's start a
-                <strong> conversation.</strong>
+
+                <strong>
+                   conversation.
+                </strong>
+
               </h2>
+
 
               <p className="contact-info-description">
                 Whether you're a recruiter, developer, startup,
@@ -133,7 +218,10 @@ ${name}`
               </p>
 
 
-              {/* Email */}
+
+              {/* =================================================
+                  EMAIL
+              ================================================= */}
 
               <a
                 href="mailto:mail.kkshukla@gmail.com"
@@ -141,18 +229,31 @@ ${name}`
               >
 
                 <div className="contact-info-icon">
+
                   <Mail size={17} />
+
                 </div>
 
+
                 <div>
-                  <span>Email</span>
-                  <strong>mail.kkshukla@gmail.com</strong>
+
+                  <span>
+                    Email
+                  </span>
+
+                  <strong>
+                    mail.kkshukla@gmail.com
+                  </strong>
+
                 </div>
 
               </a>
 
 
-              {/* Phone */}
+
+              {/* =================================================
+                  PHONE
+              ================================================= */}
 
               <a
                 href="tel:+917985687221"
@@ -160,50 +261,89 @@ ${name}`
               >
 
                 <div className="contact-info-icon">
+
                   <Phone size={17} />
+
                 </div>
 
+
                 <div>
-                  <span>Phone</span>
-                  <strong>+91  79856  87221</strong>
+
+                  <span>
+                    Phone
+                  </span>
+
+                  <strong>
+                    +91 79856 87221
+                  </strong>
+
                 </div>
 
               </a>
 
 
-              {/* Location */}
+
+              {/* =================================================
+                  LOCATION
+              ================================================= */}
 
               <div className="contact-info-card">
 
                 <div className="contact-info-icon">
+
                   <MapPin size={17} />
+
                 </div>
 
+
                 <div>
-                  <span>Location</span>
-                  <strong>New Delhi , India</strong>
+
+                  <span>
+                    Location
+                  </span>
+
+                  <strong>
+                    New Delhi, India
+                  </strong>
+
                 </div>
 
               </div>
 
 
-              {/* Availability */}
+
+              {/* =================================================
+                  AVAILABILITY
+              ================================================= */}
 
               <div className="contact-info-card">
 
                 <div className="contact-info-icon">
+
                   <Clock3 size={17} />
+
                 </div>
 
+
                 <div>
-                  <span>Availability</span>
-                  <strong>Open to opportunities</strong>
+
+                  <span>
+                    Availability
+                  </span>
+
+                  <strong>
+                    Open to opportunities
+                  </strong>
+
                 </div>
 
               </div>
 
 
-              {/* Social */}
+
+              {/* =================================================
+                  SOCIAL LINKS
+              ================================================= */}
 
               <div className="contact-social-section">
 
@@ -211,27 +351,43 @@ ${name}`
                   FIND ME ONLINE
                 </span>
 
+
                 <div className="contact-social-links">
-                   <a
-    href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="Facebook"
-  >
-    <FaFacebookF size={17} />
-  </a>
 
 
-  {/* WhatsApp */}
-  <a
-    href="https://wa.me/917985687221?text=Hello%20Krishna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
-    target="_blank"
-    rel="noreferrer"
-    aria-label="WhatsApp"
-  >
-    <FaWhatsapp size={17} />
-  </a>
+                  {/* Facebook */}
 
+                  <a
+                    href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Facebook"
+                  >
+
+                    <FaFacebookF size={17} />
+
+                  </a>
+
+
+
+                  {/* WhatsApp */}
+
+                  <a
+                    href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                      "Hello Krishna, I visited your portfolio and would like to connect with you."
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="WhatsApp"
+                  >
+
+                    <FaWhatsapp size={17} />
+
+                  </a>
+
+
+
+                  {/* GitHub */}
 
                   <a
                     href="https://github.com/"
@@ -239,8 +395,14 @@ ${name}`
                     rel="noreferrer"
                     aria-label="GitHub"
                   >
+
                     <FaGithub size={17} />
+
                   </a>
+
+
+
+                  {/* LinkedIn */}
 
                   <a
                     href="https://linkedin.com/"
@@ -248,8 +410,11 @@ ${name}`
                     rel="noreferrer"
                     aria-label="LinkedIn"
                   >
+
                     <FaLinkedinIn size={17} />
+
                   </a>
+
 
                 </div>
 
@@ -258,17 +423,22 @@ ${name}`
             </div>
 
 
+
             {/* =================================================
                 CONTACT FORM
             ================================================= */}
 
             <div className="contact-form-wrapper">
 
+
               <div className="contact-form-header">
 
                 <div className="contact-form-icon">
+
                   <Send size={18} />
+
                 </div>
+
 
                 <div>
 
@@ -285,12 +455,16 @@ ${name}`
               </div>
 
 
+
               <form
                 className="contact-form"
                 onSubmit={handleSubmit}
               >
 
-                {/* Name */}
+
+                {/* =================================================
+                    NAME
+                ================================================= */}
 
                 <div className="contact-form-group">
 
@@ -303,13 +477,17 @@ ${name}`
                     name="name"
                     type="text"
                     placeholder="Enter your name"
+                    autoComplete="name"
                     required
                   />
 
                 </div>
 
 
-                {/* Email */}
+
+                {/* =================================================
+                    EMAIL
+                ================================================= */}
 
                 <div className="contact-form-group">
 
@@ -322,13 +500,17 @@ ${name}`
                     name="email"
                     type="email"
                     placeholder="you@example.com"
+                    autoComplete="email"
                     required
                   />
 
                 </div>
 
 
-                {/* Subject */}
+
+                {/* =================================================
+                    SUBJECT
+                ================================================= */}
 
                 <div className="contact-form-group">
 
@@ -347,7 +529,10 @@ ${name}`
                 </div>
 
 
-                {/* Message */}
+
+                {/* =================================================
+                    MESSAGE
+                ================================================= */}
 
                 <div className="contact-form-group">
 
@@ -366,22 +551,37 @@ ${name}`
                 </div>
 
 
-                {/* Submit */}
+
+                {/* =================================================
+                    SUBMIT
+                ================================================= */}
 
                 <button
                   type="submit"
                   className="contact-submit-btn"
                 >
+
                   Send Message
+
                   <ArrowRight size={15} />
-                  
+
                 </button>
 
 
+
+                {/* =================================================
+                    FORM NOTE
+                ================================================= */}
+
                 <p className="contact-form-note">
+
                   <CheckCircle2 size={13} />
-                  Your message will open in your email application.
+
+                  Your message will open in WhatsApp with
+                  your details as a draft.
+
                 </p>
+
 
               </form>
 
@@ -394,6 +594,7 @@ ${name}`
       </section>
 
 
+
       {/* =====================================================
           OPPORTUNITY SECTION
       ===================================================== */}
@@ -404,18 +605,29 @@ ${name}`
 
           <div className="contact-opportunity-card">
 
+
             <div className="contact-opportunity-icon">
+
               <BriefcaseBusiness size={23} />
+
             </div>
+
 
             <span>
               LOOKING FOR OPPORTUNITIES
             </span>
 
+
             <h2>
+
               Interested in
-              <strong> working together?</strong>
+
+              <strong>
+                working together?
+              </strong>
+
             </h2>
+
 
             <p>
               I am interested in software development opportunities,
@@ -423,21 +635,39 @@ ${name}`
               contribute, learn and grow.
             </p>
 
+
             <div className="contact-opportunity-tags">
 
-              <span>Software Development</span>
-              <span>Frontend Development</span>
-              <span>MERN Stack</span>
-              <span>Java</span>
+              <span>
+                Software Development
+              </span>
+
+              <span>
+                Frontend Development
+              </span>
+
+              <span>
+                MERN Stack
+              </span>
+
+              <span>
+                Java
+              </span>
 
             </div>
 
+
             <a
-              href="mailto:your-email@gmail.com?subject=Job Opportunity"
+              href={opportunityWhatsAppURL}
+              target="_blank"
+              rel="noreferrer"
               className="contact-opportunity-btn"
             >
+
               Discuss an Opportunity
+
               <ArrowRight size={15} />
+
             </a>
 
           </div>
@@ -445,6 +675,7 @@ ${name}`
         </div>
 
       </section>
+
 
 
       {/* =====================================================
@@ -456,8 +687,13 @@ ${name}`
         <div className="contact-container">
 
           <p>
+
             Have an idea?
-            <strong> Let's talk.</strong>
+
+            <strong>
+              Let's talk.
+            </strong>
+
           </p>
 
         </div>
@@ -467,5 +703,6 @@ ${name}`
     </main>
   );
 };
+
 
 export default Contact;
