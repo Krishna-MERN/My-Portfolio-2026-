@@ -110,38 +110,38 @@ const categories = [
      FRONTEND
   ======================================================= */
 
-  {
-    icon: Monitor,
-    title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces",
+  // {
+  //   icon: Monitor,
+  //   title: "Frontend Development",
+  //   description: "Building responsive and interactive user interfaces",
 
-    technologies: [
+  //   technologies: [
 
-      // CURRENT SKILLS
+  //     // CURRENT SKILLS
 
-      { name: "React.js", icon: FaReact },
-      { name: "HTML5", icon: SiHtml5 },
-    //   { name: "CSS3", icon: SiCss3 },
-      { name: "JavaScript", icon: FaJs },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "Vite", icon: SiVite },
+  //     { name: "React.js", icon: FaReact },
+  //     { name: "HTML5", icon: SiHtml5 },
+  //   //   { name: "CSS3", icon: SiCss3 },
+  //     { name: "JavaScript", icon: FaJs },
+  //     { name: "Tailwind CSS", icon: SiTailwindcss },
+  //     { name: "Vite", icon: SiVite },
 
-      // FUTURE SKILLS
+  //     // FUTURE SKILLS
 
-      // { name: "TypeScript", icon: SiTypescript },
-      // { name: "Next.js", icon: SiNextdotjs },
-      // { name: "Redux", icon: SiRedux },
-      // { name: "Redux Toolkit", icon: SiRedux },
-      { name: "Bootstrap", icon: SiBootstrap },
-      // { name: "SASS / SCSS", icon: SiSass },
-      // { name: "Material UI", icon: Code2 },
-      // { name: "Angular", icon: Code2 },
-      // { name: "Vue.js", icon: Code2 },
-      // { name: "jQuery", icon: Code2 },
-      // { name: "Webpack", icon: SiWebpack },
-      // { name: "Babel", icon: SiBabel },
-    ],
-  },
+  //     // { name: "TypeScript", icon: SiTypescript },
+  //     // { name: "Next.js", icon: SiNextdotjs },
+  //     // { name: "Redux", icon: SiRedux },
+  //     // { name: "Redux Toolkit", icon: SiRedux },
+  //     { name: "Bootstrap", icon: SiBootstrap },
+  //     // { name: "SASS / SCSS", icon: SiSass },
+  //     // { name: "Material UI", icon: Code2 },
+  //     // { name: "Angular", icon: Code2 },
+  //     // { name: "Vue.js", icon: Code2 },
+  //     // { name: "jQuery", icon: Code2 },
+  //     // { name: "Webpack", icon: SiWebpack },
+  //     // { name: "Babel", icon: SiBabel },
+  //   ],
+  // },
 
 
   /* =======================================================
@@ -240,113 +240,113 @@ const categories = [
      DEVELOPMENT TOOLS
   ======================================================= */
 
-  {
-    icon: Wrench,
-    title: "Development Tools",
-    description: "Tools used throughout the software development workflow",
+  // {
+  //   icon: Wrench,
+  //   title: "Development Tools",
+  //   description: "Tools used throughout the software development workflow",
 
-    technologies: [
+  //   technologies: [
 
-      // CURRENT SKILLS
+  //     // CURRENT SKILLS
 
-      { name: "VS Code", icon: Code2 },
-      { name: "Postman", icon: SiPostman },
-      { name: "Git", icon: FaGitAlt },
-      { name: "GitHub", icon: FaGithub },
-      { name: "Vite", icon: SiVite },
+  //     { name: "VS Code", icon: Code2 },
+  //     { name: "Postman", icon: SiPostman },
+  //     { name: "Git", icon: FaGitAlt },
+  //     { name: "GitHub", icon: FaGithub },
+  //     { name: "Vite", icon: SiVite },
 
-      // FUTURE SKILLS
+  //     // FUTURE SKILLS
 
-      { name: "IntelliJ IDEA", icon: Code2 },
-      // { name: "Eclipse", icon: Code2 },
-      // { name: "Docker Desktop", icon: FaDocker },
-      // { name: "Figma", icon: Code2 },
-      // { name: "Jira", icon: Code2 },
-      // { name: "Notion", icon: Code2 },
-    ],
-  },
+  //     { name: "IntelliJ IDEA", icon: Code2 },
+  //     // { name: "Eclipse", icon: Code2 },
+  //     // { name: "Docker Desktop", icon: FaDocker },
+  //     // { name: "Figma", icon: Code2 },
+  //     // { name: "Jira", icon: Code2 },
+  //     // { name: "Notion", icon: Code2 },
+  //   ],
+  // },
 
 
   /* =======================================================
      TESTING
   ======================================================= */
 
-  {
-    icon: ShieldCheck,
-    title: "Testing",
-    description: "Software testing and quality assurance",
+  // {
+  //   icon: ShieldCheck,
+  //   title: "Testing",
+  //   description: "Software testing and quality assurance",
 
-    technologies: [
+  //   technologies: [
 
-      // FUTURE SKILLS
+  //     // FUTURE SKILLS
 
-      // { name: "Jest", icon: SiJest },
-      // { name: "Cypress", icon: SiCypress },
-      { name: "React Testing Library", icon: FaReact },
-      // { name: "JUnit", icon: FaJava },
-      // { name: "Selenium", icon: Code2 },
-      { name: "Postman Testing", icon: SiPostman },
-    ],
-  },
+  //     // { name: "Jest", icon: SiJest },
+  //     // { name: "Cypress", icon: SiCypress },
+  //     { name: "React Testing Library", icon: FaReact },
+  //     // { name: "JUnit", icon: FaJava },
+  //     // { name: "Selenium", icon: Code2 },
+  //     { name: "Postman Testing", icon: SiPostman },
+  //   ],
+  // },
 
 
   /* =======================================================
      COMPUTER SCIENCE & DSA
   ======================================================= */
 
-  {
-    icon: Brain,
-    title: "Computer Science",
-    description: "Core concepts and problem-solving skills",
+  // {
+  //   icon: Brain,
+  //   title: "Computer Science",
+  //   description: "Core concepts and problem-solving skills",
 
-    technologies: [
+  //   technologies: [
 
-      // CURRENT SKILLS
+  //     // CURRENT SKILLS
 
-      { name: "Data Structures", icon: Brain },
-      { name: "Algorithms", icon: Brain },
-      { name: "Problem Solving", icon: Brain },
+  //     { name: "Data Structures", icon: Brain },
+  //     { name: "Algorithms", icon: Brain },
+  //     { name: "Problem Solving", icon: Brain },
 
-      // FUTURE / ADVANCED SKILLS
+  //     // FUTURE / ADVANCED SKILLS
 
-      { name: "OOP", icon: Code2 },
-      // { name: "DBMS", icon: Database },
-      { name: "Operating Systems", icon: Monitor },
-      { name: "Computer Networks", icon: Server },
-      { name: "System Design", icon: Server },
-      { name: "Design Patterns", icon: Code2 },
-      // { name: "Low Level Design", icon: Code2 },
-      // { name: "High Level Design", icon: Server },
-      // { name: "Multithreading", icon: Code2 },
-    ],
-  },
+  //     { name: "OOP", icon: Code2 },
+  //     // { name: "DBMS", icon: Database },
+  //     { name: "Operating Systems", icon: Monitor },
+  //     { name: "Computer Networks", icon: Server },
+  //     { name: "System Design", icon: Server },
+  //     { name: "Design Patterns", icon: Code2 },
+  //     // { name: "Low Level Design", icon: Code2 },
+  //     // { name: "High Level Design", icon: Server },
+  //     // { name: "Multithreading", icon: Code2 },
+  //   ],
+  // },
 
 
   /* =======================================================
      OTHER / FUTURE TECHNOLOGIES
   ======================================================= */
 
-  {
-    icon: Code2,
-    title: "Other Technologies",
-    description: "Additional technologies I may explore",
+  // {
+  //   icon: Code2,
+  //   title: "Other Technologies",
+  //   description: "Additional technologies I may explore",
 
-    technologies: [
+  //   technologies: [
 
-      // FUTURE SKILLS
+  //     // FUTURE SKILLS
 
-      { name: "Machine Learning", icon: Brain },
-      { name: "Artificial Intelligence", icon: Brain },
-      { name: "Generative AI", icon: Brain },
-      { name: "OpenAI API", icon: Brain },
-      { name: "Cyber Security", icon: ShieldCheck },
-      // { name: "Blockchain", icon: Code2 },
-      // { name: "WebSockets", icon: Server },
-      // { name: "Microservices", icon: Server },
-      // { name: "Serverless", icon: Cloud },
-      { name: "Web3", icon: Code2 },
-    ],
-  },
+  //     { name: "Machine Learning", icon: Brain },
+  //     { name: "Artificial Intelligence", icon: Brain },
+  //     { name: "Generative AI", icon: Brain },
+  //     { name: "OpenAI API", icon: Brain },
+  //     { name: "Cyber Security", icon: ShieldCheck },
+  //     // { name: "Blockchain", icon: Code2 },
+  //     // { name: "WebSockets", icon: Server },
+  //     // { name: "Microservices", icon: Server },
+  //     // { name: "Serverless", icon: Cloud },
+  //     { name: "Web3", icon: Code2 },
+  //   ],
+  // },
 ];
 
 

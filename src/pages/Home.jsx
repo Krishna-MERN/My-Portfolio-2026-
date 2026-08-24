@@ -24,9 +24,9 @@ const Home = () => {
      <EducationPreview/>
      <ResearchPreview/>
      <ExperiencePreview/>
+       <UpdatesPreview/>
      <CodingProfiles/>
      <GitHubActivity/>
-     <UpdatesPreview/>
      <CallToAction/>
     </div>
   )
