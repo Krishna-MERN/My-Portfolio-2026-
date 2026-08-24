@@ -214,7 +214,7 @@ const Blog = () => {
                       to={`/blog/${post.id}`}
                       aria-label={`Read ${post.title}`}
                     >
-                      <ArrowRight size={15} />
+                      <ArrowRight size={17} />
                     </Link>
                   </div>
                 </article>

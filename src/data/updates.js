@@ -59,6 +59,15 @@ const updates = [
       "Completed my B.Tech journey in Computer Science and Engineering and began focusing full-time on software development and career opportunities.",
     tags: ["B.Tech", "CSE", "Career"],
   },
+  {
+    id: 7,
+    date: "20 August 2026",
+    category: "Learning",
+    title: "Started a new learning series: DSA in Java — Basic to Advanced 🚀",
+    description:
+      "The goal is to build strong problem-solving skills by learning Data Structures & Algorithms step by step, starting from the fundamentals and gradually moving toward advanced concepts.I’ll be practicing consistently, solving coding problems, and documenting my progress along the way.💻📚",
+    tags: ["Java", "DSA", "Learning"],
+  },
 ];
 
 export default updates;

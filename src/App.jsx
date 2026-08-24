@@ -21,6 +21,9 @@ import CareerJourney from "./pages/CareerJourney";
 // import CodingProfiles from "./pages/CodingProfiles";
 import Contact from "./pages/Contact";
 import BlogDemo from "./pages/blogs/BlogDemo";
+import BlogDSAJava from "./pages/blogs/BlogDSAJava";
+import BlogRealWorldProjects from "./pages/blogs/BlogRealWorldProjects";
+import BlogLearningTechnologies from "./pages/blogs/BlogLearningTechnologies";
 
 function App() {
   return (
@@ -54,7 +57,9 @@ function App() {
 
           <Route path="/blog" element={<Blog />} />
               <Route path="/blog/1" element={<MyJourney />} />
-              <Route path="/blog/2" element={<BlogDemo />} />
+              <Route path="/blog/2" element={<BlogDSAJava/>} />
+              <Route path="/blog/3" element={<BlogRealWorldProjects/>} />
+              <Route path="/blog/4" element={<BlogLearningTechnologies/>} />
           {/* <Route path="/coding-profiles" element={<CodingProfiles />} /> */}
 
           <Route path="/career-journey" element={<CareerJourney />} />

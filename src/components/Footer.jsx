@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   ArrowUp,
   ArrowUpRight,
@@ -137,27 +138,27 @@ function Footer() {
 
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
 
               <li>
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
               </li>
 
               <li>
-                <a href="/projects">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
 
               <li>
-                <a href="/education">Education</a>
+                <Link to="/education">Education</Link>
               </li>
 
               <li>
-                <a href="/experience">Experience</a>
+                <Link to="/experience">Experience</Link>
               </li>
 
               <li>
-                <a href="/updates">Updates</a>
+                <Link to="/updates">Updates</Link>
               </li>
             </ul>
           </div>
@@ -171,23 +172,23 @@ function Footer() {
 
             <ul>
               <li>
-                <a href="/skills">Skills</a>
+                <Link to="/skills">Skills</Link>
               </li>
 
               <li>
-                <a href="/coding-profiles">Coding Profiles</a>
+                <Link to="/coding-profiles">Coding Profiles</Link>
               </li>
 
               <li>
-                <a href="/github">GitHub Activity</a>
+                <Link to="/github">GitHub Activity</Link>
               </li>
 
               <li>
-                <a href="/blog">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
 
               <li>
-                <a href="/contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -292,10 +293,10 @@ function Footer() {
             </div>
           </div>
 
-          <a href="/contact" className="footer-contact-btn">
+          <Link to="/contact" className="footer-contact-btn">
             Let's Talk
             <ArrowUpRight size={15} />
-          </a>
+          </Link>
         </div>
 
         {/* =====================================================

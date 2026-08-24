@@ -374,6 +374,7 @@ ${name}`
                 >
                   Send Message
                   <ArrowRight size={15} />
+                  
                 </button>
 
 

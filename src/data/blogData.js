@@ -5,7 +5,7 @@ const blogData = [
     excerpt:
       "A personal look at my journey from learning programming fundamentals to building real-world web applications.",
     category: "Career",
-    date: "August 2026",
+    date: "12 June 2026",
     readTime: "5 min read",
     featured: false,
     tags: ["Career", "Software Development", "Learning"],
@@ -13,50 +13,66 @@ const blogData = [
 
   {
     id: 2,
-    title: "Why I Chose Java for DSA and Problem Solving",
+    title: "Why DSA and Core Java Still Matter for Modern Software Developers",
     excerpt:
-      "Understanding why Java became one of my primary languages for data structures, algorithms and technical interview preparation.",
-    category: "Programming",
-    date: "August 2026",
-    readTime: "6 min read",
-    featured: false,
-    tags: ["Java", "DSA", "Programming"],
+      "Understanding why strong programming fundamentals, Java and Data Structures & Algorithms remain important even when modern development is built around frameworks and technologies.",
+    category: "SOFTWARE DEVELOPMENT",
+    date: "17 July 2026",
+    readTime: "8 min read",
+    featured: true,
+    tags: ["Software Development",
+        "Java",
+        "DSA",
+        "Problem Solving",
+        "Programming",
+        "Career"],
   },
 
   {
     id: 3,
-    title: "Building Projects with the MERN Stack",
+    title: "What Building Real-World Projects Taught Me About Software Development",
     excerpt:
-      "Lessons learned while working with MongoDB, Express.js, React and Node.js to build full-stack applications.",
+      "Things I learned from going beyond tutorials, building projects, facing bugs and figuring out how different parts of an application actually work together.",
     category: "Development",
-    date: "July 2025",
+    date: "29 July 2026",
     readTime: "7 min read",
     featured: false,
-    tags: ["MERN", "React", "Node.js"],
+    tags: ["Node.js","Software Development",
+        "MERN",
+        "React",
+        "JavaScript",
+        "Projects",
+        "Learning",],
   },
+
+  // {
+  //   id: 4,
+  //   title: "Things I Learned While Building My Portfolio",
+  //   excerpt:
+  //     "Design decisions, responsive layouts and development lessons from building my personal developer portfolio.",
+  //   category: "Development",
+  //   date: "August 2025",
+  //   readTime: "5 min read",
+  //   featured: false,
+  //   tags: ["React", "Portfolio", "CSS"],
+  // },
 
   {
     id: 4,
-    title: "Things I Learned While Building My Portfolio",
-    excerpt:
-      "Design decisions, responsive layouts and development lessons from building my personal developer portfolio.",
-    category: "Development",
-    date: "August 2025",
-    readTime: "5 min read",
-    featured: false,
-    tags: ["React", "Portfolio", "CSS"],
-  },
-
-  {
-    id: 5,
     title: "How I Approach Learning New Technologies",
     excerpt:
-      "My practical approach to learning new technologies, building projects and turning theoretical knowledge into practical skills.",
+      "My practical approach to understanding new technologies, moving beyond tutorials, building projects and turning new concepts into usable skills.",
     category: "Learning",
-    date: "November 2025",
-    readTime: "4 min read",
+    date: " 12 August 2026",
+    readTime: "9 min read",
     featured: false,
-    tags: ["Learning", "Development", "Career"],
+    tags: ["Software Development",
+        "Learning",
+        "JavaScript",
+        "React",
+        "MERN",
+        "Java",
+        "Career",],
   },
 
   /*
@@ -65,29 +81,29 @@ const blogData = [
   Uncomment when you publish them.
   ============================================================
 */
-  {
-    id: 6,
-    title: "Understanding React Component Architecture",
-    excerpt:
-      "A practical guide to organizing React applications into reusable and maintainable components.",
-    category: "React",
-    date: "March 2026",
-    readTime: "8 min read",
-    featured: false,
-    tags: ["React", "JavaScript", "Frontend"],
-  },
+  // {
+  //   id: 6,
+  //   title: "Understanding React Component Architecture",
+  //   excerpt:
+  //     "A practical guide to organizing React applications into reusable and maintainable components.",
+  //   category: "React",
+  //   date: "March 2026",
+  //   readTime: "8 min read",
+  //   featured: false,
+  //   tags: ["React", "JavaScript", "Frontend"],
+  // },
 
-  {
-    id: 7,
-    title: "My Experience Preparing for Technical Interviews",
-    excerpt:
-      "The resources, topics and strategies I use while preparing for software development interviews.",
-    category: "Career",
-    date: "April 2026",
-    readTime: "6 min read",
-    featured: false,
-    tags: ["Interview", "DSA", "Career"],
-  },
+  // {
+  //   id: 7,
+  //   title: "My Experience Preparing for Technical Interviews",
+  //   excerpt:
+  //     "The resources, topics and strategies I use while preparing for software development interviews.",
+  //   category: "Career",
+  //   date: "April 2026",
+  //   readTime: "6 min read",
+  //   featured: false,
+  //   tags: ["Interview", "DSA", "Career"],
+  // },
 
   
 ];
