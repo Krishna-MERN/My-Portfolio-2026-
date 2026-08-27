@@ -353,7 +353,7 @@ const projects = [
 ],
 
     github: "https://github.com/Krishna-MERN",
-    live: "grow-scale.vercel.app",
+    live: "https://grow-scale.vercel.app/",
   },
 
   /* =====================================================
