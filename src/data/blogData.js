@@ -81,17 +81,25 @@ const blogData = [
   Uncomment when you publish them.
   ============================================================
 */
-  // {
-  //   id: 6,
-  //   title: "Understanding React Component Architecture",
-  //   excerpt:
-  //     "A practical guide to organizing React applications into reusable and maintainable components.",
-  //   category: "React",
-  //   date: "March 2026",
-  //   readTime: "8 min read",
-  //   featured: false,
-  //   tags: ["React", "JavaScript", "Frontend"],
-  // },
+  {
+    id: 5,
+    title: "GPT-6 Astra: The AI That Could Redefine Work, Jobs and the Future",
+    excerpt:
+      "A deep look at GPT-6 Astra, its capabilities, advantages, risks and its potential impact on software development, jobs, business, cybersecurity and the environment.",
+    
+    category: "Artificial Intelligence",
+    date: "Sept 2026",
+    readTime: "12 min read",
+    featured: true,
+    tags: [ "GPT-6 Astra",
+        "Artificial Intelligence",
+        "AI",
+        "Future of Work",
+        "Software Development",
+        "Cybersecurity",
+        "Technology",
+        "Environment",],
+  },
 
   // {
   //   id: 7,

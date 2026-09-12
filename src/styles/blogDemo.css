@@ -116,8 +116,7 @@
   min-width: 520px;
 
   border-collapse: collapse;
-
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .blog-table-wrapper th {
@@ -129,7 +128,7 @@
 
   color: #334155;
 
-  font-size: 9px;
+  font-size: 12px;
 
   font-weight: 800;
 
@@ -172,7 +171,7 @@
 
   color: #1e40af;
 
-  font-size: 11px;
+  font-size: 12px;
 
   font-weight: 800;
 }

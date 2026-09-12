@@ -5,7 +5,7 @@ import "../../styles/blogDemo.css";
 const BlogDemo = () => {
   return (
     <BlogFormat
-      title="How I Started My Journey as a Software Developer"
+      title="How I Started My Journey as a Softaware Developer"
       subtitle="A detailed look at my learning journey, the technologies I explored, the projects I built and the lessons I learned along the way."
       category="CAREER"
       date="August 18, 2026"

@@ -24,6 +24,7 @@ import BlogDemo from "./pages/blogs/BlogDemo";
 import BlogDSAJava from "./pages/blogs/BlogDSAJava";
 import BlogRealWorldProjects from "./pages/blogs/BlogRealWorldProjects";
 import BlogLearningTechnologies from "./pages/blogs/BlogLearningTechnologies";
+import Astra6 from "./pages/blogs/Astra6";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
               <Route path="/blog/2" element={<BlogDSAJava/>} />
               <Route path="/blog/3" element={<BlogRealWorldProjects/>} />
               <Route path="/blog/4" element={<BlogLearningTechnologies/>} />
+              <Route path="/blog/5" element={<Astra6/>} />
           {/* <Route path="/coding-profiles" element={<CodingProfiles />} /> */}
 
           <Route path="/career-journey" element={<CareerJourney />} />
