@@ -12,8 +12,36 @@ import "../styles/ExperiencePreview.css";
 function ExperiencePreview() {
 
   const experiences = [
-    {
+{
       id: 1,
+      role: "Associate Operations",
+      company: "AionOS ",
+      location: "Noida Sector 142",
+      duration: "Sept 2026 – Current",
+      type: "Full-Time Job",
+
+      description:
+        "Currently working at AionOS as an Associate – Operations, gaining hands-on experience in business operations, process management, data handling, and professional workflows.",
+
+      responsibilities: [
+        "Handle and process operational data with accuracy and attention to detail.",
+"Manage day-to-day workflows and ensure timely process execution.",
+"Perform data validation, quality checks, and issue identification.",
+"Use technology and analytical skills to improve process efficiency.",
+
+      ],
+
+      technologies: [
+        "Data Handling ",
+        "Problam Solving ",
+        "Quality Control",
+        "Data Processing ",
+      ],
+    },
+
+
+    {
+      id: 2,
       role: "MERN Stack Developer Intern",
       company: "Softpro India",
       location: "Lucknow India",
@@ -38,30 +66,7 @@ function ExperiencePreview() {
     },
 
 
-    // {
-    //   id: 2,
-    //   role: "Web Developer Intern",
-    //   company: "Company Name",
-    //   location: "India / Remote",
-    //   duration: "Month 2025 – Month 2025",
-    //   type: "Internship",
-
-    //   description:
-    //     "Contributed to web development projects with a focus on responsive design, frontend development and user experience.",
-
-    //   responsibilities: [
-    //     "Created responsive website interfaces.",
-    //     "Implemented reusable frontend components.",
-    //     "Worked on improving website usability and performance.",
-    //   ],
-
-    //   technologies: [
-    //     "HTML",
-    //     "CSS",
-    //     "JavaScript",
-    //     "React.js",
-    //   ],
-    // },
+    
   ];
 
 

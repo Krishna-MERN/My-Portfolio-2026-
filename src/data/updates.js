@@ -68,6 +68,15 @@ const updates = [
       "The goal is to build strong problem-solving skills by learning Data Structures & Algorithms step by step, starting from the fundamentals and gradually moving toward advanced concepts.I’ll be practicing consistently, solving coding problems, and documenting my progress along the way.💻📚",
     tags: ["Java", "DSA", "Learning"],
   },
+  {
+    id: 8,
+    date: "15 September 2026",
+    category: "Work",
+    title: "Associate – Operations at AionOS, working with data, processes, and technology-driven workflows.🚀",
+    description:
+      "Working as an Associate – Operations at AionOS, contributing to data handling, process management, and technology-driven workflows while developing analytical and problem-solving skills in a professional IT environment.",
+          tags: [ "Operations","Data Management", "Process Management ","IT Operations"," Workflow Management"],
+  },
 ];
 
 export default updates;

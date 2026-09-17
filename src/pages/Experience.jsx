@@ -170,15 +170,15 @@ const Experience = () => {
                 <div>
 
                   <span className="experience-label">
-                    SOFTWARE DEVELOPMENT
+                    Associate Operations
                   </span>
 
                   <h3>
-                    Software Developer / Intern
+                    Associate - Operations Backend
                   </h3>
 
                   <h4>
-                    Company Name
+                    AionOS
                   </h4>
 
                 </div>
@@ -190,12 +190,12 @@ const Experience = () => {
 
                 <span>
                   <CalendarDays size={14} />
-                  2025 – Present
+                  Sept 2026 – Present
                 </span>
 
                 <span>
                   <MapPin size={14} />
-                  India
+                  Noida India
                 </span>
 
               </div>
@@ -215,12 +215,7 @@ const Experience = () => {
                 </h4>
 
                 <p>
-                  Worked on software development tasks involving
-                  frontend development, web applications, APIs and
-                  modern development technologies. Contributed to
-                  building practical solutions while improving
-                  development and problem-solving skills.
-                </p>
+                  Working as an Associate – Operations at AionOS, contributing to data handling, process management, and technology-driven workflows while developing analytical and problem-solving skills in a professional IT environment.</p>
 
               </div>
 
@@ -233,33 +228,32 @@ const Experience = () => {
 
                 <ul>
 
+
                   <li>
                     <CheckCircle2 size={15} />
-                    Developed responsive and user-friendly web
-                    interfaces.
+                    Manage day-to-day workflows and ensure timely process execution.
                   </li>
 
                   <li>
                     <CheckCircle2 size={15} />
-                    Worked with modern JavaScript and React-based
-                    development.
+                    Perform data validation, quality checks, and issue identification.
                   </li>
 
                   <li>
                     <CheckCircle2 size={15} />
-                    Integrated APIs and handled application data.
+                     Use technology and analytical skills to improve process efficiency.Integrated APIs and handled application data.
                   </li>
 
                   <li>
                     <CheckCircle2 size={15} />
-                    Debugged issues and improved application
+                    Handle and process operational data with accuracy and attention to detail.Debugged issues and improved application
                     functionality.
                   </li>
 
-                  <li>
+                  {/* <li>
                     <CheckCircle2 size={15} />
                     Collaborated on real-world development tasks.
-                  </li>
+                  </li> */}
 
                 </ul>
 
@@ -270,12 +264,12 @@ const Experience = () => {
 
             <div className="experience-technologies">
 
-              <span>JavaScript</span>
-              <span>React.js</span>
-              <span>Node.js</span>
-              <span>Express.js</span>
+              <span>Problam Solving </span>
+              <span>Web management</span>
+              <span>Technical Expertiese</span>
+              {/* <span>Express.js</span>
               <span>MongoDB</span>
-              <span>Git</span>
+              <span>Git</span> */}
 
             </div>
 
@@ -303,11 +297,11 @@ const Experience = () => {
                   </span>
 
                   <h3>
-                    Web Developer / Project Experience
+                    MERN Stack Developer Intern
                   </h3>
 
                   <h4>
-                    Datara Softwares
+                    Softpro India
                   </h4>
 
                 </div>
@@ -319,12 +313,12 @@ const Experience = () => {
 
                 <span>
                   <CalendarDays size={14} />
-                  2025 – 2026
+                  Jun 2025 – Aug 2025
                 </span>
 
                 <span>
                   <MapPin size={14} />
-                  India
+                  Lucknow , India
                 </span>
 
               </div>
@@ -414,7 +408,7 @@ const Experience = () => {
               EXPERIENCE ITEM 03
           ================================================= */}
 
-          <article className="experience-card">
+          {/* <article className="experience-card">
 
             <div className="experience-card-header">
 
@@ -532,7 +526,7 @@ const Experience = () => {
 
             </div>
 
-          </article>
+          </article> */}
 
         </div>
 
@@ -662,6 +656,49 @@ const Experience = () => {
 
           <div className="experience-simple-timeline">
 
+
+
+             <div className="experience-simple-item">
+
+              <span>
+                2026
+              </span>
+
+              <div>
+                <h3>
+                  Associate – Operations  @AionOS, working with data, processes, and technology-driven workflows.
+                </h3>
+
+                <p>
+                  contributing to data handling, process management, and technology-driven workflows while developing analytical and problem-solving skills in a professional IT environment.
+                </p>
+              </div>
+
+            </div>
+
+
+
+             <div className="experience-simple-item">
+
+              <span>
+                2025
+              </span>
+
+              <div>
+                <h3>
+                  Worked on real-world web projects
+                </h3>
+
+                <p>
+                  Applied development skills to practical
+                  requirements and client-oriented projects.
+                </p>
+              </div>
+
+            </div>
+
+            
+
             <div className="experience-simple-item">
 
               <span>
@@ -683,46 +720,10 @@ const Experience = () => {
             </div>
 
 
-            <div className="experience-simple-item">
-
-              <span>
-                2025
-              </span>
-
-              <div>
-                <h3>
-                  Started working on real-world web projects
-                </h3>
-
-                <p>
-                  Applied development skills to practical
-                  requirements and client-oriented projects.
-                </p>
-              </div>
-
-            </div>
+           
 
 
-            <div className="experience-simple-item">
-
-              <span>
-                2026
-              </span>
-
-              <div>
-                <h3>
-                  Preparing for professional software development
-                  roles
-                </h3>
-
-                <p>
-                  Expanding technical knowledge while pursuing
-                  opportunities to contribute to professional
-                  software teams.
-                </p>
-              </div>
-
-            </div>
+           
 
           </div>
 
