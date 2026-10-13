@@ -1,0 +1,914 @@
+/* =========================================================
+   LEARNING RESOURCES SECTION
+   ========================================================= */
+
+.resources-section {
+  width: 100%;
+  padding: 100px 6%;
+  position: relative;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.resources-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 35px;
+  margin-bottom: 42px;
+}
+
+.resources-heading {
+  max-width: 720px;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 16px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  opacity: 0.6;
+}
+
+.resources-heading h2 {
+  margin: 0;
+
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+
+  font-weight: 800;
+  letter-spacing: -1.8px;
+}
+
+.resources-heading h2 span {
+  margin-left: 3px;
+}
+
+.resources-heading p {
+  max-width: 650px;
+
+  margin: 18px 0 0;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  opacity: 0.6;
+}
+
+
+/* =========================================================
+   RESOURCE COUNT
+   ========================================================= */
+
+.resource-count {
+  min-width: 125px;
+
+  padding: 17px 20px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(10px);
+}
+
+.resource-count strong {
+  display: block;
+
+  font-size: 28px;
+  line-height: 1.1;
+
+  font-weight: 750;
+}
+
+.resource-count span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 11px;
+  letter-spacing: 0.8px;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   SEARCH TOOLBAR
+   ========================================================= */
+
+.resources-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.resource-search {
+  width: min(100%, 580px);
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 0 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.resource-search:hover {
+  border-color: rgba(255, 255, 255, 0.17);
+}
+
+.resource-search:focus-within {
+  border-color: rgba(255, 255, 255, 0.27);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.025);
+}
+
+.resource-search svg {
+  flex-shrink: 0;
+
+  opacity: 0.45;
+}
+
+.resource-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.resource-search input::placeholder {
+  opacity: 0.4;
+}
+
+
+/* =========================================================
+   FILTER ICON
+   ========================================================= */
+
+.filter-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  opacity: 0.7;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.filter-icon:hover {
+  background: rgba(255, 255, 255, 0.07);
+
+  border-color: rgba(255, 255, 255, 0.2);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FILTER GROUPS
+   ========================================================= */
+
+.resource-filters,
+.resource-types {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-bottom: 11px;
+}
+
+
+/* =========================================================
+   FILTER BUTTON
+   ========================================================= */
+
+.resource-filters button,
+.resource-types button {
+  position: relative;
+
+  height: 36px;
+
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  opacity: 0.65;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+/* =========================================================
+   FILTER BUTTON SHINE
+   ========================================================= */
+
+.resource-filters button::before,
+.resource-types button::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 80%
+    );
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+
+  pointer-events: none;
+}
+
+.resource-filters button:hover::before,
+.resource-types button:hover::before {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   FILTER HOVER
+   ========================================================= */
+
+.resource-filters button:hover,
+.resource-types button:hover {
+  opacity: 1;
+
+  transform: translateY(-2px);
+
+  border-color: rgba(255, 255, 255, 0.2);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.045)
+    );
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   ACTIVE FILTER
+   ========================================================= */
+
+.resource-filters button.active,
+.resource-types button.active {
+  opacity: 1;
+
+  font-weight: 600;
+
+  border-color: rgba(255, 255, 255, 0.27);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.17),
+      rgba(255, 255, 255, 0.07)
+    );
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================================
+   ACTIVE FILTER DOT
+   ========================================================= */
+
+.resource-filters button.active::after,
+.resource-types button.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -6px;
+
+  width: 4px;
+  height: 4px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   FILTER CLICK
+   ========================================================= */
+
+.resource-filters button:active,
+.resource-types button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================================================
+   RESULT INFORMATION
+   ========================================================= */
+
+.resources-result-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 22px;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+
+  opacity: 0.5;
+}
+
+.resources-result-info strong {
+  opacity: 1;
+}
+
+.resources-result-info button {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  opacity: 0.8;
+
+  transition: opacity 0.2s ease;
+}
+
+.resources-result-info button:hover {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   RESOURCE GRID
+   ========================================================= */
+
+.resources-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE CARD
+   ========================================================= */
+
+.resource-card {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 23px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.022);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(255, 255, 255, 0.17);
+
+  background: rgba(255, 255, 255, 0.038);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.resource-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resource-type-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  opacity: 0.8;
+}
+
+.bookmark-btn {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  cursor: pointer;
+
+  opacity: 0.45;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bookmark-btn:hover {
+  opacity: 1;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.resource-content {
+  flex: 1;
+
+  padding-top: 20px;
+}
+
+.resource-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  opacity: 0.45;
+}
+
+.resource-meta .dot {
+  opacity: 0.5;
+}
+
+.resource-card h3 {
+  margin: 11px 0 9px;
+
+  font-size: 19px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+.resource-card p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  opacity: 0.58;
+}
+
+
+/* =========================================================
+   RESOURCE TAGS
+   ========================================================= */
+
+.resource-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 17px;
+}
+
+.resource-tags span {
+  padding: 4px 7px;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  font-size: 10px;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   RESOURCE ACTION
+   ========================================================= */
+
+.resource-actions {
+  margin-top: 23px;
+}
+
+.resource-primary-btn {
+  width: 100%;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: inherit;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 550;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resource-primary-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color: rgba(255, 255, 255, 0.2);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.resources-empty {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-top: 25px;
+
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  opacity: 0.55;
+}
+
+.resources-empty svg {
+  opacity: 0.5;
+}
+
+.resources-empty h3 {
+  margin: 15px 0 6px;
+
+  font-size: 18px;
+}
+
+.resources-empty p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+.resources-empty button {
+  margin-top: 18px;
+
+  padding: 8px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resources-empty button:hover {
+  background: rgba(255, 255, 255, 0.06);
+
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .resources-section {
+    padding: 85px 5%;
+  }
+
+  .resources-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .resources-section {
+    padding: 70px 5%;
+  }
+
+
+  /* HEADER */
+
+  .resources-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+  }
+
+  .resources-heading h2 {
+    font-size: 39px;
+
+    letter-spacing: -1.2px;
+  }
+
+  .resources-heading p {
+    font-size: 14px;
+  }
+
+  .resource-count {
+    min-width: 110px;
+  }
+
+
+  /* SEARCH */
+
+  .resources-toolbar {
+    width: 100%;
+  }
+
+  .resource-search {
+    flex: 1;
+  }
+
+  .filter-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+
+  /* FILTERS */
+
+  .resource-filters,
+  .resource-types {
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+
+    padding: 3px 3px 9px;
+
+    margin-bottom: 6px;
+
+    gap: 7px;
+
+    scrollbar-width: none;
+  }
+
+  .resource-filters::-webkit-scrollbar,
+  .resource-types::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resource-filters button,
+  .resource-types button {
+    height: 34px;
+
+    padding: 0 14px;
+
+    font-size: 11px;
+
+    flex-shrink: 0;
+  }
+
+
+  /* RESULT */
+
+  .resources-result-info {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+
+  /* GRID */
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+
+  /* CARD */
+
+  .resource-card {
+    min-height: 285px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .resources-section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .resources-heading h2 {
+    font-size: 34px;
+  }
+
+  .resource-card {
+    padding: 18px;
+  }
+
+  .resource-card h3 {
+    font-size: 18px;
+  }
+
+  .resource-filters button,
+  .resource-types button {
+    height: 33px;
+
+    padding: 0 13px;
+
+    font-size: 10.5px;
+  }
+
+}

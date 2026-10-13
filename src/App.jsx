@@ -25,6 +25,7 @@ import BlogDSAJava from "./pages/blogs/BlogDSAJava";
 import BlogRealWorldProjects from "./pages/blogs/BlogRealWorldProjects";
 import BlogLearningTechnologies from "./pages/blogs/BlogLearningTechnologies";
 import Astra6 from "./pages/blogs/Astra6";
+import LearningResources from "./pages/LearningResources";
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
           <Route path="/certifications" element={<Certifications />} />
 
           <Route path="/achievements" element={<Achievements />} />
+
+          <Route path="/res" element={<LearningResources />} />
 
           <Route path="/blog" element={<Blog />} />
               <Route path="/blog/1" element={<MyJourney />} />
