@@ -101,7 +101,7 @@ const resources = [
     description:
       "Practice algorithms and data structures to improve your problem-solving skills.",
     category: "DSA",
-    type: "Youtube",
+    type: "YouTube",
     level: "Intermediate",
     tags: ["DSA", "Algorithms", "Problem Solving"],
     url: "https://youtu.be/m3fg2PRY1u4",
