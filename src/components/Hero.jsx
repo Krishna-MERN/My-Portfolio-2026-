@@ -20,7 +20,7 @@ const socialLinks = {
   email: " Mail.kkshukla@gmail.com",
 };
 
-const resumeUrl = "https://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=sharing";
+const resumeUrl = "https://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=drive_link";
 
 function Hero() {
   return (
