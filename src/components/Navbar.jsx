@@ -25,7 +25,7 @@ import {
 import "../styles/Navbar.css";
 
 
-const resumeUrl = "https://drive.google.com/file/d/11aPhSXLojbNOzkeYVeTsxFQlrElAzTfc/view?usp=sharing";
+const resumeUrl = "https://drive.google.com/file/d/11aPhSXLojbNOzkeYVeTsxFQlrElAzTfc/view?usp=sharinghttps://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=sharing";
 
 const socialLinks = {
   github: "https://github.com/Krishna-MERN",

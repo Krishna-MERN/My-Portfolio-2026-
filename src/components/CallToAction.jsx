@@ -51,7 +51,7 @@ function CallToAction() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-btn cta-btn-secondary"

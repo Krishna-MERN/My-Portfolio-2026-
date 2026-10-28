@@ -203,7 +203,7 @@ function Footer() {
             <ul>
               <li>
                 <a
-                  href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
+                  href="https://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -238,7 +238,7 @@ function Footer() {
             {/* Resume Button */}
 
             <a
-              href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
+              href="https://drive.google.com/file/d/1x3z1cg-TRuq4_-Qgw-kgl49QldhQHAWy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-resume-btn"
